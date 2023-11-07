@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <title>Haven of Fairy - Dịch vụ</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="header-image">
+        <img
+          src="./assets/css/img/353760824_1336181400331387_2371576071041273523_n.jpg"
+          alt=""
+          class="header-img__large"
+        />
+      </div>
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item header-navbar__navbar-item-highlighted"
+            onclick="dieu_huong_dichvu()"
+          >
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-container1">
+          <div class="body-container__form">
+            <div class="body-icon">
+              <img
+                src="./assets/css/img/icons-desktop-mobile-100x100-05-01 1.png"
+                class="body-icon__service"
+                alt=""
+              />
+            </div>
+            <div class="body-des">Các tiện ích bao gồm</div>
+
+            <ul class="body-service__list">
+              <li class="body-service__item">
+                <div class="body-service__icon">
+                  <img src="./assets/css/img/nhà bếp.png" alt="" />
+                </div>
+                <p class="body-service__des">
+                  Nhà bếp hiện<br />
+                  đại<br />
+                </p>
+              </li>
+              <li class="body-service__item">
+                <div class="body-service__icon">
+                  <img src="./assets/css/img/dọn phòng.png" alt="" />
+                </div>
+                <p class="body-service__des">
+                  Dịch vụ dọn<br />
+                  phòng<br />
+                </p>
+              </li>
+              <li class="body-service__item">
+                <div class="body-service__icon">
+                  <img src="./assets/css/img/không gian.png" alt="" />
+                </div>
+                <p class="body-service__des">
+                  Không gian<br />
+                  xanh<br />
+                </p>
+              </li>
+              <li class="body-service__item">
+                <div class="body-service__icon">
+                  <img src="./assets/css/img/giặt ủi.png" alt="" />
+                </div>
+                <p class="body-service__des">
+                  Dịch vụ<br />
+                  giặt, ủi<br />
+                </p>
+              </li>
+              <li class="body-service__item">
+                <div class="body-service__icon">
+                  <img src="./assets/css/img/wifi.png" alt="" />
+                </div>
+                <p class="body-service__des">
+                  Wifi tốc<br />
+                  độ cao<br />
+                </p>
+              </li>
+              <li class="body-service__item">
+                <div class="body-service__icon">
+                  <img src="./assets/css/img/phòng tắm.png" alt="" />
+                </div>
+                <p class="body-service__des">
+                  Phòng tắm<br />
+                  riêng<br />
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="body-container__title">
+            <h2 class="body-container__title-des">Nhiều dịch vụ</h2>
+            <p class="body-container__title-subdes">
+              Haven of Fairy sỡ hữu nhiều dịch vụ sang trọng và cao<br />
+              cấp nhằm nâng cao trải nghiệm của khách hàng khi<br />
+              tận hưởng không gian sang trọng và đẳng cấp quốc tế.
+            </p>
+          </div>
+        </div>
+
+        <div class="body-container2">
+          <div class="body-container__title2">
+            <h2 class="body-container__title-des2">Hỗ trợ 24/7</h2>
+            <p class="body-container__title-subdes2">
+              Cùng với đội ngũ các nhân viên giàu kinh nghiệm sẫn<br />sàng phục
+              vụ và làm hài lòng khách hàng mọi lúc.<br />
+            </p>
+          </div>
+
+          <div class="body-container__form2">
+            <div class="body-icon2">
+              <img
+                src="./assets/css/img/istockphoto-1225828132-612x612.jpg"
+                class="body-icon__service2"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="./assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_chitietphong() {
+        location.assign("http://127.0.0.1:5500/RoomDetail/index.html");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Haven of Fairy - Tìm phòng</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header-navbar__navbar-item" onclick="dieu_huong_dichvu()">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <!-- Hidden -->
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-booking">
+          <div class="body-booking__information-list">
+            <div class="body-booking__information-location">
+              <div class="body-booking__icon">
+                <i
+                  class="body-booking__information-icon bi bi-geo-alt-fill"
+                ></i>
+              </div>
+              <div class="body-booking__information-location-name">
+                <p>Phú Quốc</p>
+                <span>Vườn quốc gia Phú Quốc</span>
+              </div>
+
+              <div class="body-booking__information-edit">
+                <p>Chỉnh sửa</p>
+              </div>
+            </div>
+
+            <div class="body-booking__information-calendar">
+              <i
+                class="body-booking__information-calendar-icon bi bi-calendar-event"
+              ></i>
+            </div>
+
+            <div class="body-booking__information-humans">
+              <i
+                class="body-booking__information-humans-icon bi bi-person-fill"
+              ></i>
+            </div>
+          </div>
+
+          <div class="body-arrange">
+            <div class="body-arrange__title">
+              <span>Sắp xếp theo</span>
+            </div>
+
+            <div class="body-arrange__box">
+              <span>
+                Giá thấp đến cao
+                <i class="body-arrange__icon bi bi-arrow-up"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-booking__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129868.1114487658!2d103.93439053858475!3d10.294421249789197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31082065453ecebd%3A0xe4e356f150980c7!2zVsaw4budbiBRdeG7kWMgZ2lhIFBow7ogUXXhu5Fj!5e0!3m2!1svi!2s!4v1690964095492!5m2!1svi!2s"
+            width="1300"
+            height="600"
+            style="border: 20"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="body-booking__map-custom"
+          ></iframe>
+        </div>
+
+        <!-- List Room 1 -->
+        <div class="body-booking__wrapper">
+          <div class="body-booking__room-list">
+            <div
+              class="body-booking__room-item"
+              onclick="dieu_huong_timphong_giaphong()"
+            >
+              <div class="body-booking__room-picture">
+                <img
+                  src="./assets/css/img/standard room.jpeg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Standard Room<br />View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>2.000.000 đồng / đêm</p>
+                </div>
+                <div
+                  class="body-booking__room-sub-label3"
+                  onclick="dieu_huong_timphong_giaphong()"
+                >
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/standard-room-twin.jpg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Standard Room<br />Twin View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>4.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- List Room 2 -->
+          <div class="body-booking__room-list">
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/standard room.jpeg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Superior Room<br />View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>5.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/superior-twin.jpg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Superior Room<br />Twin View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>7.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- List Room 3 -->
+          <div class="body-booking__room-list">
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/Deluxe-Room.jpg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Deluxe Room<br />View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>10.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/deluxe-room-twin-bedroom.jpg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Deluxe Room<br />Twin View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>12.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- List Room 4 -->
+          <div class="body-booking__room-list">
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/Suite-Room.jpg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Suite Room<br />View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>20.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-booking__room-item">
+              <div class="body-booking__room-picture">
+                <img
+                  src="assets/css/img/Suite-Room2.jpg"
+                  alt=""
+                  class="body-booking__room-img"
+                />
+              </div>
+
+              <div class="body-booking__room-title">
+                <div class="body-booking__room-des">
+                  <p>Tiện ích</p>
+                </div>
+                <div class="body-booking__room-sub-des">
+                  <p>+ 5 tiện ích khác</p>
+                </div>
+              </div>
+
+              <div class="body-booking__room-icon-list">
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-headset"></i>
+                  <span>Check - <br />in tại quầy<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-water"></i>
+                  <span>View<br />biển<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Table-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Bàn<br />làm việc<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <img
+                    src="assets/css/img/Clean-Icon.svg"
+                    alt=""
+                    class="body-booking__room-icon"
+                  />
+                  <span>Lau<br />dọn phòng<br /></span>
+                </div>
+
+                <div class="body-booking__room-icon-item">
+                  <i class="body-booking__room-icon bi bi-telephone-fill"></i>
+                  <span>Hỗ trợ<br />24/7<br /></span>
+                </div>
+              </div>
+
+              <div class="body-booking__room-separate"></div>
+              <div class="body-booking__room-label">
+                <p>Hạng phòng và Loại giá phòng</p>
+              </div>
+              <div class="body-booking__room-sub-label">
+                <div class="body-booking__room-sub-label1">
+                  <p>Phòng Suite Room<br />Twin View<br /></p>
+                </div>
+                <div class="body-booking__room-sub-label2">
+                  <p><span>từ</span>18.000.000 đồng / đêm</p>
+                </div>
+                <div class="body-booking__room-sub-label3">
+                  <p>Chọn phòng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong_giaphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom-RoomPrice/index.html");
+      }
+    </script>
+  </body>
+</html>

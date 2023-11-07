@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Haven of Fairy - Xác nhận thông tin - Gửi hóa đơn</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header-navbar__navbar-item" onclick="dieu_huong_dichvu()">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-terms-conditions__container">
+          <div class="body-terms-conditions__label">
+            <h2>CHÍNH SÁCH BẢO MẬT</h2>
+          </div>
+
+          <div class="body-terms-conditions__items">
+            <!-- <div class="body-terms-conditions__title">
+              <h4>Điều khoản chung</h4>
+            </div> -->
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Công ty Cổ phần Haven of Fairy đã xây dựng ứng dụng Haven of
+                Fairy dưới dạng ứng dụng Miễn phí. Dịch vụ này được cung cấp bởi
+                Công ty Cổ phần Haven of Fairy miễn phí và được sử dụng như hiện
+                tại.
+              </p>
+
+              <p>
+                Trang này được sử dụng để thông báo cho khách truy cập về các
+                chính sách của chúng tôi với việc thu thập, sử dụng và bảo mật
+                thông tin cá nhân nếu bất kỳ ai quyết định sử dụng Dịch vụ của
+                chúng tôi.
+              </p>
+
+              <p>
+                Nếu bạn chọn sử dụng Dịch vụ của chúng tôi, nghĩa là bạn đồng ý
+                với việc thu thập và sử dụng thông tin liên quan đến chính sách
+                này. Thông tin Cá nhân mà chúng tôi thu thập được sử dụng để
+                cung cấp và cải thiện Dịch vụ. Chúng tôi sẽ không sử dụng hoặc
+                chia sẻ thông tin của bạn với bất kỳ bên thứ ba khác.
+              </p>
+            </div>
+
+            <!-- Thu thập và sử dụng thông tin -->
+            <div class="body-terms-conditions__title">
+              <h4>Thu thập và sử dụng thông tin</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Để có trải nghiệm tốt hơn, khi sử dụng Dịch vụ của chúng tôi,
+                chúng tôi có thể yêu cầu bạn cung cấp cho chúng tôi một số thông
+                tin nhận dạng cá nhân nhất định. Thông tin mà chúng tôi yêu cầu
+                sẽ được chúng tôi lưu giữ và sử dụng như được mô tả trong chính
+                sách bảo mật này.
+              </p>
+
+              <p>
+                Ứng dụng không sử dụng các dịch vụ của bên thứ ba có thể thu
+                thập thông tin được sử dụng để nhận dạng bạn.
+              </p>
+            </div>
+
+            <!-- Thông tin chúng tôi thu thập -->
+            <div class="body-terms-conditions__title">
+              <h4>Thông tin chúng tôi thu thập</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Dưới đây là giải thích về các loại thông tin chúng tôi thu thập
+                khi bạn sử dụng dịch vụ của chúng tôi:
+              </p>
+
+              <ol class="body-terms-conditions__subtitle-list">
+                <li class="body-terms-conditions__subtitle-item">
+                  Thông tin cá nhân: Chúng tôi thu thập thông tin bạn chọn để
+                  chia sẻ với chúng tôi khi thiết lập tài khoản mới. Loại thông
+                  tin này bao gồm tên, số điện thoại và ngày sinh của bạn.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Thông tin thiết bị: Chúng tôi thu thập thông tin dành riêng
+                  cho thiết bị, chẳng hạn như kiểu phần cứng và phiên bản Haven
+                  of Fairy bạn đang sử dụng trên điện thoại của mình để hỗ trợ
+                  bạn tốt hơn.
+                </li>
+              </ol>
+            </div>
+
+            <!-- Cách chúng tôi sử dụng thông tin -->
+            <div class="body-terms-conditions__title">
+              <h4>Cách chúng tôi sử dụng thông tin</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi đam mê tạo ra trải nghiệm hấp dẫn và tiện ích cho cư
+                dân của chúng tôi. Chúng tôi sử dụng tất cả thông tin chúng tôi
+                có để hỗ trợ Dịch vụ. Đây là cách thực hiện:
+              </p>
+
+              <ol class="body-terms-conditions__subtitle-list">
+                <li class="body-terms-conditions__subtitle-item">
+                  Phát triển, vận hành, cải tiến, cung cấp, duy trì và bảo vệ
+                  các sản phẩm và dịch vụ của chúng tôi.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Liên lạc với bạn về Dịch vụ của chúng tôi và cho bạn biết về
+                  các chính sách và điều khoản của chúng tôi. Chúng tôi cũng sử
+                  dụng thông tin của bạn để trả lời bạn khi bạn liên hệ với
+                  chúng tôi.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Tăng cường sự an toàn và bảo mật cho các sản phẩm và dịch vụ
+                  của chúng tôi.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Xác minh danh tính của bạn và ngăn chặn gian lận hoặc hoạt
+                  động trái phép hoặc bất hợp pháp khác.
+                </li>
+              </ol>
+
+              <p class="body-terms-conditions__spacing">
+                Thực thi Điều khoản dịch vụ và các chính sách sử dụng khác của
+                chúng tôi.
+              </p>
+            </div>
+
+            <!-- Cách chúng tôi chia sẻ thông tin -->
+            <div class="body-terms-conditions__title">
+              <h4>Cách chúng tôi chia sẻ thông tin</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi xử lý dữ liệu của bạn một cách an toàn bằng cách
+                truyền qua https. Thông tin chúng tôi thu thập không được chia
+                sẻ cho bất kỳ bên thứ ba nào.
+              </p>
+            </div>
+
+            <!-- Bảo mật thông tin -->
+            <div class="body-terms-conditions__title">
+              <h4>Bảo mật thông tin</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi đánh giá cao sự tin tưởng của bạn trong việc cung cấp
+                cho chúng tôi Thông tin cá nhân của bạn, do đó chúng tôi đang cố
+                gắng sử dụng các phương tiện được chấp nhận để bảo vệ thông tin
+                đó.
+              </p>
+            </div>
+
+            <!-- Những thay đổi đối với Chính sách Bảo mật này -->
+            <div class="body-terms-conditions__title">
+              <h4>Những thay đổi đối với Chính sách Bảo mật này</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi có thể cập nhật Chính sách Bảo mật của mình theo thời
+                gian. Vì vậy, bạn nên xem lại trang này định kỳ để biết bất kỳ
+                thay đổi nào. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi
+                nào bằng cách đăng Chính sách Bảo mật mới trên trang này. Những
+                thay đổi này có hiệu lực ngay sau khi chúng được đăng trên trang
+                này.
+              </p>
+            </div>
+
+            <!-- Liên hệ chúng tôi -->
+            <div class="body-terms-conditions__title">
+              <h4>Liên hệ chúng tôi</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào về Chính sách Bảo mật
+                của chúng tôi, đừng ngần ngại liên hệ với chúng tôi.
+              </p>
+
+              <p>Email: <span>cthavenoffairy.vn</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+  </body>
+</html>

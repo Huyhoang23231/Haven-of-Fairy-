@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Haven of Fairy - Xác nhận thông tin - Gửi hóa đơn</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header-navbar__navbar-item" onclick="dieu_huong_dichvu()">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-terms-conditions__container">
+          <div class="body-terms-conditions__label">
+            <h2>ĐIỀU KHOẢN VÀ ĐIỀU KIỆN</h2>
+          </div>
+
+          <div class="body-terms-conditions__items">
+            <!-- Điều khoản chung -->
+            <div class="body-terms-conditions__title">
+              <h4>Điều khoản chung</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Bằng cách truy cập và đặt hàng với Haven of Fairy, bạn xác nhận
+                rằng bạn đồng ý và bị ràng buộc bởi các điều khoản dịch vụ có
+                trong Điều khoản & Điều kiện được nêu dưới đây. Các điều khoản
+                này áp dụng cho toàn bộ trang web và bất kỳ email hoặc hình thức
+                liên lạc nào khác giữa bạn và Haven of Fairy.
+              </p>
+
+              <p>
+                Trong mọi trường hợp, Haven of Fairy sẽ không chịu trách nhiệm
+                đối với bất kỳ thiệt hại trực tiếp, gián tiếp, đặc biệt, ngẫu
+                nhiên hoặc do hậu quả nào, bao gồm nhưng không giới hạn ở việc
+                mất dữ liệu hoặc lợi nhuận, phát sinh từ việc sử dụng hoặc không
+                thể sử dụng, các tài liệu trên trang web này, ngay cả khi Haven
+                of Fairy hoặc một đại diện được ủy quyền đã được thông báo về
+                khả năng xảy ra những thiệt hại như vậy. Nếu việc bạn sử dụng
+                các tài liệu từ trang web này dẫn đến nhu cầu bảo dưỡng, sửa
+                chữa hoặc hiệu chỉnh thiết bị hoặc dữ liệu, bạn phải chịu bất kỳ
+                chi phí nào cho chúng.
+              </p>
+
+              <p>
+                Haven of Fairy sẽ không chịu trách nhiệm về bất kỳ kết quả nào
+                có thể xảy ra trong quá trình sử dụng tài nguyên của chúng tôi.
+                Chúng tôi có quyền thay đổi giá và sửa đổi chính sách sử dụng
+                tài nguyên trong bất kỳ thời điểm nào.
+              </p>
+            </div>
+
+            <!-- Giấy phép -->
+            <div class="body-terms-conditions__title">
+              <h4>Giấy phép</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Haven of Fairy cấp cho bạn giấy phép có thể thu hồi, không độc
+                quyền, không thể chuyển nhượng, có giới hạn để tải xuống, cài
+                đặt và sử dụng ứng dụng theo đúng các điều khoản của Thỏa thuận
+                này.
+              </p>
+
+              <p>
+                Các Điều khoản & Điều kiện này là hợp đồng giữa bạn và Haven of
+                Fairy (trong Điều khoản & Điều kiện này được gọi là "Haven of
+                Fairy", "chúng tôi" hoặc "của chúng tôi"), nhà cung cấp trang
+                web Haven of Fairy và các dịch vụ có thể truy cập từ trang web
+                Haven of Fairy (được gọi chung trong Điều khoản & Điều kiện này
+                là "Dịch vụ Haven of Fairy").
+              </p>
+
+              <p>
+                Bạn đồng ý bị ràng buộc bởi các Điều khoản & Điều kiện này. Nếu
+                bạn không đồng ý với các Điều khoản & Điều kiện này, vui lòng
+                không sử dụng Dịch vụ Haven of Fairy. Trong các Điều khoản &
+                Điều kiện này, "bạn" đề cập đến cả bạn với tư cách cá nhân và
+                pháp nhân mà bạn đại diện. Nếu bạn vi phạm bất kỳ Điều khoản &
+                Điều kiện nào, chúng tôi có quyền hủy tài khoản của bạn hoặc
+                chặn quyền truy cập vào tài khoản của bạn mà không cần thông
+                báo.
+              </p>
+            </div>
+
+            <!-- Định nghĩa và thuật ngữ chính -->
+            <div class="body-terms-conditions__title">
+              <h4>Định nghĩa và thuật ngữ chính</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Để giúp giải thích mọi thứ rõ ràng nhất có thể trong Điều khoản
+                & Điều kiện này, mỗi khi bất kỳ điều khoản nào trong số này được
+                tham chiếu, đều được xác định rõ ràng là:
+              </p>
+
+              <ol class="body-terms-conditions__subtitle-list">
+                <li class="body-terms-conditions__subtitle-item">
+                  Cookie: một lượng nhỏ dữ liệu được tạo ra bởi một trang web và
+                  được lưu bởi trình duyệt web của bạn. Nó được sử dụng để xác
+                  định trình duyệt của bạn, cung cấp phân tích, ghi nhớ thông
+                  tin về bạn như tùy chọn ngôn ngữ hoặc thông tin đăng nhập của
+                  bạn.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Công ty: khi chính sách này đề cập đến “Công ty”, “chúng tôi”
+                  hoặc “của chúng tôi”, nghĩa là Công ty Cổ phần Haven of Fairy,
+                  Tầng 10, B-02, Tòa nhà Pearl Plaza, 561A Điện Biên Phủ, Phường
+                  25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam chịu
+                  trách nhiệm về thông tin của bạn theo Điều khoản & Điều kiện
+                  này.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Quốc gia: nơi M Village hoặc các chủ sở hữu / người sáng lập M
+                  Village đặt trụ sở, trong trường hợp này là Việt Nam
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Thiết bị: bất kỳ thiết bị nào được kết nối internet như điện
+                  thoại, máy tính bảng, máy tính hoặc bất kỳ thiết bị nào khác
+                  có thể được sử dụng để tham quan Làng M và sử dụng các dịch
+                  vụ.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Dịch vụ: đề cập đến dịch vụ do Haven of Fairy cung cấp như
+                  được mô tả trong các điều khoản tương đối (nếu có) và trên nền
+                  tảng này.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Dịch vụ của bên thứ ba: đề cập đến các nhà quảng cáo, nhà tài
+                  trợ cuộc thi, các đối tác quảng cáo và tiếp thị và những người
+                  khác cung cấp nội dung của chúng tôi hoặc có sản phẩm hoặc
+                  dịch vụ mà chúng tôi nghĩ rằng bạn có thể quan tâm.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Trang web: Haven of Fairy. "S", có thể được truy cập qua URL
+                  này:
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Bạn: một cá nhân hoặc tổ chức đã đăng ký với Haven of Fairy để
+                  sử dụng Dịch vụ.
+                </li>
+              </ol>
+
+              <p class="body-terms-conditions__spacing">Những hạn chế</p>
+              <p>
+                Bạn đồng ý không làm như vậy và bạn sẽ không cho phép người
+                khác:
+              </p>
+
+              <ol class="body-terms-conditions__subtitle-list">
+                <li class="body-terms-conditions__subtitle-item">
+                  Cấp phép, bán, thuê, cho thuê, chuyển nhượng, phân phối,
+                  truyền tải, lưu trữ, thuê ngoài, tiết lộ hoặc khai thác thương
+                  mại ứng dụng hoặc cung cấp nền tảng cho bất kỳ bên thứ ba nào.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Sửa đổi, tạo các tác phẩm phái sinh của, tháo rời, giải mã,
+                  biên dịch ngược hoặc thiết kế ngược bất kỳ phần nào của ứng
+                  dụng.
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Xóa, thay đổi hoặc che khuất bất kỳ thông báo độc quyền nào
+                  (bao gồm bất kỳ thông báo nào về bản quyền hoặc nhãn hiệu) của
+                  Haven of Fairy hoặc các chi nhánh, đối tác, nhà cung cấp hoặc
+                  người cấp phép của ứng dụng.
+                </li>
+              </ol>
+            </div>
+
+            <!-- Chính sách trả lại và hoàn lại tiền -->
+            <div class="body-terms-conditions__title">
+              <h4>Chính sách trả lại và hoàn lại tiền</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Cảm ơn bạn đã đặt phòng tại Haven of Fairy. Chúng tôi đánh giá
+                cao việc bạn thích mua những thứ mà chúng tôi xây dựng. Chúng
+                tôi cũng muốn đảm bảo bạn có trải nghiệm bổ ích khi khám phá,
+                đánh giá và mua sản phẩm của chúng tôi.
+              </p>
+
+              <p>
+                Như với bất kỳ trải nghiệm mua sắm nào, có các điều khoản và
+                điều kiện áp dụng cho các giao dịch tại Haven of Fairy. Chúng
+                tôi sẽ ngắn gọn như luật sư của chúng tôi sẽ cho phép. Điều
+                chính cần nhớ là bằng cách đặt hàng hoặc mua hàng tại Haven of
+                Fairt, bạn đồng ý với các điều khoản cùng với Chính sách Bảo mật
+                của Haven of Fairy.
+              </p>
+
+              <p>
+                Nếu, vì bất kỳ lý do gì, Bạn không hoàn toàn hài lòng với bất kỳ
+                sản phẩm hoặc dịch vụ nào mà chúng tôi cung cấp, đừng ngần ngại
+                liên hệ với chúng tôi và chúng tôi sẽ thảo luận về bất kỳ vấn đề
+                nào bạn đang gặp phải với sản phẩm của chúng tôi.
+              </p>
+
+              <p>Những đề nghị của bạn, những thỉnh cầu của bạn</p>
+
+              <p>
+                Mọi phản hồi, nhận xét, ý tưởng, cải tiến hoặc đề xuất (gọi
+                chung là "Đề xuất") do bạn cung cấp cho Haven of Fairy đối với
+                ứng dụng sẽ vẫn là tài sản duy nhất và độc quyền của Haven of
+                Fairy.
+              </p>
+
+              <p>
+                Haven of Fairy sẽ được tự do sử dụng, sao chép, sửa đổi, xuất
+                bản, hoặc phân phối lại các Đề xuất cho bất kỳ mục đích nào và
+                theo bất kỳ cách nào mà không có bất kỳ tín dụng nào hoặc bất kỳ
+                khoản bồi thường nào cho bạn.
+              </p>
+            </div>
+
+            <!-- Sự đồng ý của bạn -->
+            <div class="body-terms-conditions__title">
+              <h4>Sự đồng ý của bạn</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi đã cập nhật Điều khoản & Điều kiện của mình để cung
+                cấp cho bạn sự minh bạch hoàn toàn về những gì đang được thiết
+                lập khi bạn truy cập trang web của chúng tôi và cách nó được sử
+                dụng. Bằng cách sử dụng ứng dụng của chúng tôi, đăng ký tài
+                khoản hoặc mua hàng, bạn đồng ý với Điều khoản & Điều kiện của
+                chúng tôi.
+              </p>
+            </div>
+
+            <!-- Liên kết các trang Web khác -->
+            <div class="body-terms-conditions__title">
+              <h4>Liên kết các trang Web khác</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Điều khoản & Điều kiện này chỉ áp dụng cho Dịch vụ. Các Dịch vụ
+                có thể chứa các liên kết đến các trang web khác không do Haven
+                of Fairy điều hành hoặc kiểm soát. Chúng tôi không chịu trách
+                nhiệm về nội dung, tính chính xác hoặc ý kiến ​​được thể hiện
+                trong các trang web đó, và các trang web đó không được chúng tôi
+                điều tra, giám sát hoặc kiểm tra tính chính xác hoặc hoàn chỉnh.
+                Hãy nhớ rằng khi bạn sử dụng một liên kết để đi từ Dịch vụ đến
+                một trang web khác, Điều khoản & Điều kiện của chúng tôi sẽ
+                không còn hiệu lực. Việc duyệt và tương tác của bạn trên bất kỳ
+                trang web nào khác, bao gồm cả những trang web có liên kết trên
+                nền tảng của chúng tôi, phải tuân theo các quy tắc và chính sách
+                riêng của trang web đó. Các bên thứ ba như vậy có thể sử dụng
+                cookie của riêng họ hoặc các phương pháp khác để thu thập thông
+                tin về bạn.
+              </p>
+            </div>
+
+            <!-- Cookies -->
+            <div class="body-terms-conditions__title">
+              <h4>Cookies</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Haven of Fairy sử dụng "Cookies" để xác định các khu vực trên
+                trang web của chúng tôi mà bạn đã truy cập. Cookies là một phần
+                dữ liệu nhỏ được trình duyệt web của bạn lưu trữ trên máy tính
+                hoặc thiết bị di động. Chúng tôi sử dụng Cookie để nâng cao hiệu
+                suất và chức năng của ứng dụng nhưng không cần thiết cho việc sử
+                dụng chúng. Tuy nhiên, nếu không có những cookies này, một số
+                chức năng nhất định như video có thể không khả dụng hoặc bạn sẽ
+                được yêu cầu nhập chi tiết đăng nhập của mình mỗi khi truy cập
+                ứng dụng vì chúng tôi sẽ không thể nhớ rằng bạn đã đăng nhập
+                trước đó. Hầu hết các trình duyệt web có thể được thiết lập để
+                vô hiệu hóa việc sử dụng Cookies. Tuy nhiên, nếu bạn tắt Cookies
+                bạn có thể không truy cập được chức năng trên trang web của
+                chúng tôi một cách chính xác hoặc hoàn toàn. Chúng tôi không bao
+                giờ đặt Thông tin Nhận dạng Cá nhân trong Cookies.
+              </p>
+            </div>
+
+            <!-- Các thay đổi đối với các điều khoản & điều kiện của chúng tôi -->
+            <div class="body-terms-conditions__title">
+              <h4>
+                Các thay đổi đối với các điều khoản & điều kiện của chúng tôi
+              </h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Bạn xác nhận và đồng ý rằng Haven of Fairy Có thể ngừng (vĩnh
+                viễn hoặc tạm thời) cung cấp Dịch vụ (hoặc bất kỳ tính năng nào
+                trong Dịch vụ) cho bạn hoặc cho người dùng nói chung theo quyết
+                định riêng của Haven of Fairy, mà không cần thông báo trước cho
+                bạn. Bạn có thể ngừng sử dụng Dịch vụ bất kỳ lúc nào. Bạn không
+                cần phải thông báo cụ thể cho Haven of Fairy. Khi bạn ngừng sử
+                dụng Dịch vụ. Bạn thừa nhận và đồng ý rằng nếu Haven of Fairy.
+                Vô hiệu hóa quyền truy cập vào tài khoản của bạn, bạn có thể bị
+                ngăn truy cập Dịch vụ, chi tiết tài khoản của bạn hoặc bất kỳ
+                tệp hoặc tài liệu nào khác có trong tài khoản của bạn.
+              </p>
+              <p>
+                Nếu chúng tôi quyết định thay đổi Điều khoản & Điều kiện của
+                mình, chúng tôi sẽ đăng những thay đổi đó trên trang này và /
+                hoặc cập nhật ngày sửa đổi Điều khoản & Điều kiện bên dưới.
+              </p>
+            </div>
+
+            <!-- Các sửa đổi đối với ứng dụng của chúng tôi -->
+            <div class="body-terms-conditions__title">
+              <h4>Các sửa đổi đối với ứng dụng của chúng tôi</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Haven of Fairy có quyền sửa đổi, tạm ngừng hoặc ngừng, tạm thời
+                hoặc vĩnh viễn, ứng dụng hoặc bất kỳ dịch vụ nào mà nó kết nối,
+                có hoặc không có thông báo và không chịu trách nhiệm pháp lý đối
+                với bạn.
+              </p>
+            </div>
+
+            <!-- Cập nhật ứng dụng của chúng tôi -->
+            <div class="body-terms-conditions__title">
+              <h4>Cập nhật ứng dụng của chúng tôi</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Haven of Fairy đôi khi có thể cung cấp các cải tiến hoặc cải
+                tiến cho các tính năng / chức năng của ứng dụng, có thể bao gồm
+                các bản vá, sửa lỗi, cập nhật, nâng cấp và các sửa đổi khác
+                ("Cập nhật").
+              </p>
+              <p>
+                Các bản cập nhật có thể sửa đổi hoặc xóa một số tính năng và /
+                hoặc chức năng nhất định của ứng dụng. Bạn đồng ý rằng Haven of
+                Fairy không có nghĩa vụ (i) cung cấp bất kỳ Bản cập nhật nào,
+                hoặc (ii) tiếp tục cung cấp hoặc kích hoạt bất kỳ tính năng và /
+                hoặc chức năng cụ thể nào của ứng dụng cho bạn.
+              </p>
+              <p>
+                Bạn đồng ý thêm rằng tất cả các Cập nhật sẽ (i) được coi là một
+                phần không thể tách rời của ứng dụng và (ii) tuân theo các điều
+                khoản và điều kiện của Thỏa thuận này
+              </p>
+            </div>
+
+            <!-- Dịch vụ của bên thứ ba -->
+            <div class="body-terms-conditions__title">
+              <h4>Dịch vụ của bên thứ ba</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi có thể hiển thị, bao gồm hoặc cung cấp nội dung của
+                bên thứ ba (bao gồm dữ liệu, thông tin, ứng dụng và các dịch vụ
+                sản phẩm khác) hoặc cung cấp liên kết đến các trang web hoặc
+                dịch vụ của bên thứ ba ("Dịch vụ của bên thứ ba").
+              </p>
+              <p>
+                Bạn thừa nhận và đồng ý rằng Haven of Fairy sẽ không chịu trách
+                nhiệm đối với bất kỳ Dịch vụ của bên thứ ba nào, bao gồm cả tính
+                chính xác của chúng, tính đầy đủ, kịp thời, hợp lệ, tuân thủ bản
+                quyền, hợp pháp, trung thực, chất lượng hoặc bất kỳ khía cạnh
+                nào khác của chúng. Haven of Fairy không chịu và sẽ không có bất
+                kỳ nghĩa vụ hoặc trách nhiệm nào đối với bạn hoặc bất kỳ cá nhân
+                hoặc tổ chức nào khác đối với bất kỳ Dịch vụ của Bên thứ ba nào.
+              </p>
+              <p>
+                Dịch vụ của bên thứ ba và các liên kết đến đó chỉ được cung cấp
+                như một sự thuận tiện cho bạn và bạn truy cập và sử dụng chúng
+                hoàn toàn tự chịu rủi ro và tuân theo các điều khoản và điều
+                kiện của bên thứ ba đó.
+              </p>
+            </div>
+
+            <!-- Thời hạn và chấm dứt -->
+            <div class="body-terms-conditions__title">
+              <h4>Thời hạn và chấm dứt</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Thỏa thuận này sẽ vẫn có hiệu lực cho đến khi bạn hoặc M Village
+                chấm dứt hợp đồng.
+              </p>
+              <p>
+                Haven of Fairy, theo quyết định riêng của mình, vào bất kỳ lúc
+                nào và vì bất kỳ lý do nào hoặc không vì lý do gì, đình chỉ hoặc
+                chấm dứt Thỏa thuận này có hoặc không có thông báo trước.
+              </p>
+              <p>
+                Thỏa thuận này sẽ chấm dứt ngay lập tức, mà không cần thông báo
+                trước từ Haven of Fairy, trong trường hợp bạn không tuân thủ bất
+                kỳ điều khoản nào của Thỏa thuận này. Bạn cũng có thể chấm dứt
+                Thỏa thuận này bằng cách xóa ứng dụng và tất cả các bản sao của
+                nó khỏi máy tính của bạn.
+              </p>
+              <p>
+                Khi chấm dứt Thỏa thuận này, bạn sẽ ngừng mọi hoạt động sử dụng
+                ứng dụng và xóa tất cả các bản sao của ứng dụng khỏi máy tính
+                của mình.
+              </p>
+              <p>
+                Việc chấm dứt Thỏa thuận này sẽ không giới hạn bất kỳ quyền hoặc
+                biện pháp khắc phục nào của Haven of Fairy theo luật pháp hoặc
+                trong công bằng trong trường hợp bạn (trong thời hạn của Thỏa
+                thuận này) vi phạm bất kỳ nghĩa vụ nào của bạn theo Thỏa thuận
+                hiện tại.
+              </p>
+            </div>
+
+            <!-- Thông báo vi phạm bản quyền -->
+            <div class="body-terms-conditions__title">
+              <h4>Thông báo vi phạm bản quyền</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Nếu bạn là chủ sở hữu bản quyền hoặc đại diện của chủ sở hữu đó
+                và tin rằng bất kỳ tài liệu nào trên ứng dụng của chúng tôi đều
+                vi phạm bản quyền của bạn, vui lòng liên hệ với chúng tôi để
+                cung cấp thông tin sau: (a) chữ ký thực hoặc điện tử của chủ sở
+                hữu bản quyền hoặc người được ủy quyền thay mặt anh ta; (b) xác
+                định tài liệu bị cho là vi phạm; (c) thông tin liên hệ của bạn,
+                bao gồm địa chỉ, số điện thoại và email của bạn; (d) tuyên bố
+                của bạn rằng bạn thực sự tin rằng việc sử dụng tài liệu không
+                được chủ sở hữu bản quyền cho phép; và (e) tuyên bố rằng thông
+                tin trong thông báo là chính xác và nếu khai man sẽ bị phạt, bạn
+                được ủy quyền hành động thay mặt cho chủ sở hữu.
+              </p>
+            </div>
+
+            <!-- Sự bồi thường -->
+            <div class="body-terms-conditions__title">
+              <h4>Sự bồi thường</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Bạn đồng ý bồi thường và giữ Haven of Fairy và cha mẹ, công ty
+                con, chi nhánh, cán bộ, nhân viên, đại lý, đối tác và người cấp
+                phép (nếu có) của Haven of Fairy vô hại khỏi bất kỳ khiếu nại
+                hoặc yêu cầu nào, bao gồm phí luật sư hợp lý, do hoặc phát sinh
+                từ: (a) sử dụng ứng dụng; (b) vi phạm Thỏa thuận này hoặc bất kỳ
+                luật hoặc quy định nào; hoặc (c) vi phạm bất kỳ quyền nào của
+                bên thứ ba.
+              </p>
+            </div>
+
+            <!-- Không có bảo đảm -->
+            <div class="body-terms-conditions__title">
+              <h4>Không có bảo đảm</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Ứng dụng được cung cấp cho bạn "NGUYÊN TRẠNG" và "CÓ KHẢ NĂNG"
+                và với tất cả các lỗi và khuyết tật mà không có bất kỳ hình thức
+                bảo hành nào. Trong phạm vi tối đa được phép theo luật hiện
+                hành, Haven of Fairy, nhân danh chính mình và đại diện cho các
+                chi nhánh của mình cũng như các nhà cấp phép và nhà cung cấp
+                dịch vụ tương ứng của họ, từ chối rõ ràng tất cả các bảo đảm, dù
+                rõ ràng, ngụ ý, theo luật định hay cách khác, đối với ứng dụng,
+                bao gồm tất cả các bảo đảm ngụ ý về khả năng bán được, sự phù
+                hợp cho một mục đích cụ thể, quyền sở hữu và không vi phạm, và
+                các bảo đảm có thể phát sinh trong quá trình giao dịch, quá
+                trình thực hiện, sử dụng hoặc thực hành thương mại. Không giới
+                hạn những điều đã nói ở trên, Haven of Fairy không cung cấp bảo
+                hành hoặc cam kết nào và không tuyên bố dưới bất kỳ hình thức
+                nào rằng ứng dụng sẽ đáp ứng yêu cầu của bạn, đạt được bất kỳ
+                kết quả dự kiến ​​nào, tương thích hoặc hoạt động với bất kỳ
+                phần mềm, hệ thống hoặc dịch vụ, hoạt động không bị gián đoạn,
+                đáp ứng bất kỳ tiêu chuẩn hiệu suất hoặc độ tin cậy nào hoặc
+                không có lỗi hoặc bất kỳ lỗi hoặc khuyết tật nào có thể hoặc sẽ
+                được sửa chữa.
+              </p>
+              <p>
+                Không giới hạn những điều đã nói ở trên, cả Haven of Fairy và
+                bất kỳ nhà cung cấp nào của Haven of Fairy đều không đưa ra bất
+                kỳ tuyên bố hoặc bảo đảm nào dưới bất kỳ hình thức nào, rõ ràng
+                hay ngụ ý: (i) về hoạt động hoặc tính khả dụng của ứng dụng,
+                hoặc thông tin, nội dung và tài liệu hoặc sản phẩm bao gồm từ
+                đó; (ii) rằng ứng dụng sẽ không bị gián đoạn hoặc không có lỗi;
+                (iii) về độ chính xác, độ tin cậy hoặc đơn vị tiền tệ của bất kỳ
+                thông tin hoặc nội dung nào được cung cấp thông qua ứng dụng;
+                hoặc (iv) ứng dụng, máy chủ, nội dung hoặc e-mail được gửi từ
+                hoặc thay mặt cho Haven of Fairy không có vi-rút, tập lệnh, phần
+                mềm độc hại hoặc các thành phần có hại khác.
+              </p>
+              <p>
+                Một số khu vực pháp lý không cho phép loại trừ hoặc giới hạn đối
+                với các bảo đảm ngụ ý hoặc các giới hạn đối với các quyền theo
+                luật định hiện hành của người tiêu dùng, vì vậy một số hoặc tất
+                cả các loại trừ và giới hạn ở trên có thể không áp dụng cho bạn.
+              </p>
+            </div>
+
+            <!-- Trách nhiệm hữu hạn -->
+            <div class="body-terms-conditions__title">
+              <h4>Trách nhiệm hữu hạn</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Bất chấp mọi thiệt hại mà bạn có thể phải chịu, toàn bộ trách
+                nhiệm của Haven of Fairy và bất kỳ nhà cung cấp nào của làng
+                theo bất kỳ điều khoản nào của Thỏa thuận này và biện pháp khắc
+                phục độc quyền của bạn cho tất cả những điều đã nêu ở trên sẽ
+                được giới hạn trong số tiền bạn thực trả cho ứng dụng.
+              </p>
+              <p>
+                Trong phạm vi tối đa được luật pháp hiện hành cho phép, trong
+                mọi trường hợp, Haven of Fairy hoặc các nhà cung cấp của Haven
+                of Fairy sẽ không chịu trách nhiệm pháp lý đối với bất kỳ thiệt
+                hại đặc biệt, ngẫu nhiên, gián tiếp hoặc do hậu quả nào (bao
+                gồm, nhưng không giới hạn, thiệt hại do mất lợi nhuận, do mất dữ
+                liệu hoặc thông tin khác, vì lý do gián đoạn kinh doanh, vì
+                thương tích cá nhân, vì mất quyền riêng tư phát sinh từ hoặc
+                theo bất kỳ cách nào liên quan đến việc sử dụng hoặc không thể
+                sử dụng ứng dụng, phần mềm của bên thứ ba và / hoặc phần cứng
+                của bên thứ ba được sử dụng với ứng dụng , hoặc liên quan đến
+                bất kỳ điều khoản nào của Thỏa thuận này), ngay cả khi Haven of
+                Fairy hoặc bất kỳ nhà cung cấp nào đã được thông báo về khả năng
+                xảy ra những thiệt hại đó và ngay cả khi biện pháp khắc phục
+                không đạt được mục đích thiết yếu.
+              </p>
+              <p>
+                Một số tiểu bang / khu vực pháp lý không cho phép loại trừ hoặc
+                giới hạn các thiệt hại ngẫu nhiên hoặc do hậu quả, vì vậy giới
+                hạn hoặc loại trừ trên có thể không áp dụng cho bạn.
+              </p>
+            </div>
+
+            <!-- Tính hiệu lực từng phần -->
+            <div class="body-terms-conditions__title">
+              <h4>Tính hiệu lực từng phần</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Nếu bất kỳ điều khoản nào của Thỏa thuận này được coi là không
+                thể thi hành hoặc không hợp lệ, điều khoản đó sẽ được thay đổi
+                và giải thích để hoàn thành mục tiêu của điều khoản đó ở mức độ
+                cao nhất có thể theo luật hiện hành và các điều khoản còn lại sẽ
+                tiếp tục có hiệu lực đầy đủ.
+              </p>
+              <p>
+                Thỏa thuận này, cùng với Chính sách quyền riêng tư và bất kỳ
+                thông báo pháp lý nào khác do Haven of Fairy công bố trên Dịch
+                vụ, sẽ cấu thành toàn bộ thỏa thuận giữa bạn và Haven of Fairy
+                liên quan đến Dịch vụ. Nếu bất kỳ điều khoản nào của Thỏa thuận
+                này bị tòa án có thẩm quyền coi là vô hiệu, thì sự vô hiệu của
+                điều khoản đó sẽ không ảnh hưởng đến hiệu lực của các điều khoản
+                còn lại của Thỏa thuận này, sẽ vẫn có hiệu lực đầy đủ.
+              </p>
+            </div>
+
+            <!-- Các sửa đổi đối với Thỏa thuận này -->
+            <div class="body-terms-conditions__title">
+              <h4>Các sửa đổi đối với Thỏa thuận này</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Haven of Fairy lưu quyền, theo quyết định riêng của mình, sửa
+                đổi hoặc thay thế Thỏa thuận này bất kỳ lúc nào. Nếu bản sửa đổi
+                là tài liệu, chúng tôi sẽ thông báo trước ít nhất 30 ngày trước
+                khi bất kỳ điều khoản mới nào có hiệu lực. Điều gì tạo nên sự
+                thay đổi quan trọng sẽ được quyết định theo quyết định riêng của
+                chúng tôi.
+              </p>
+              <p>
+                Bằng cách tiếp tục truy cập hoặc sử dụng ứng dụng của chúng tôi
+                sau khi bất kỳ bản sửa đổi nào có hiệu lực, bạn đồng ý bị ràng
+                buộc bởi các điều khoản sửa đổi. Nếu bạn không đồng ý với các
+                điều khoản mới, bạn không còn được phép sử dụng Haven of Fairy.
+              </p>
+            </div>
+
+            <!-- Toàn bộ thỏa thuận -->
+            <div class="body-terms-conditions__title">
+              <h4>Toàn bộ thỏa thuận</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Thỏa thuận tạo thành toàn bộ thỏa thuận giữa bạn và Haven of
+                Fairy về việc bạn sử dụng ứng dụng và thay thế tất cả các thỏa
+                thuận bằng văn bản hoặc bằng miệng trước đây và đương thời giữa
+                bạn và Haven of Fairy.
+              </p>
+              <p>
+                Bạn có thể phải tuân theo các điều khoản và điều kiện bổ sung áp
+                dụng khi bạn sử dụng hoặc mua các dịch vụ khác của Haven of
+                Fairy mà Haven of Fairy sẽ cung cấp cho bạn tại thời điểm sử
+                dụng hoặc mua hàng đó.
+              </p>
+            </div>
+
+            <!-- Cập nhật Điều khoản của chúng tôi -->
+            <div class="body-terms-conditions__title">
+              <h4>Cập nhật Điều khoản của chúng tôi</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Chúng tôi có thể thay đổi Dịch vụ và chính sách của mình và
+                chúng tôi có thể cần thực hiện các thay đổi đối với các Điều
+                khoản này để chúng phản ánh chính xác Dịch vụ và chính sách của
+                chúng tôi. Trừ khi pháp luật yêu cầu khác, chúng tôi sẽ thông
+                báo cho bạn (ví dụ: thông qua Dịch vụ của chúng tôi) trước khi
+                chúng tôi thực hiện các thay đổi đối với các Điều khoản này và
+                cho bạn cơ hội để xem xét chúng trước khi chúng có hiệu lực. Sau
+                đó, nếu bạn tiếp tục sử dụng Dịch vụ, bạn sẽ bị ràng buộc bởi
+                các Điều khoản đã cập nhật. Nếu bạn không muốn đồng ý với những
+                điều khoản này hoặc bất kỳ Điều khoản cập nhật nào, bạn có thể
+                xóa tài khoản của mình.
+              </p>
+            </div>
+
+            <!-- Sở hữu trí tuệ -->
+            <div class="body-terms-conditions__title">
+              <h4>Sở hữu trí tuệ</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Ứng dụng và toàn bộ nội dung, tính năng và chức năng của nó (bao
+                gồm nhưng không giới hạn ở tất cả thông tin, phần mềm, văn bản,
+                màn hình, hình ảnh, video và âm thanh cũng như thiết kế, lựa
+                chọn và sắp xếp chúng), thuộc sở hữu của Haven of Fairy, người
+                cấp phép của nó hoặc các nhà cung cấp khác của tài liệu đó và
+                được Việt Nam và quốc tế bảo vệ bản quyền, nhãn hiệu, bằng sáng
+                chế, bí mật thương mại và các quyền sở hữu trí tuệ hoặc quyền sở
+                hữu khác. Tài liệu không được sao chép, sửa đổi, tái tạo, tải
+                xuống hoặc phân phối theo bất kỳ cách nào, toàn bộ hoặc một
+                phần, mà không có sự cho phép trước bằng văn bản của Haven of
+                Fairy, trừ khi và ngoại trừ được quy định rõ ràng trong Điều
+                khoản & Điều kiện này. Mọi việc sử dụng trái phép tài liệu đều
+                bị cấm.
+              </p>
+            </div>
+
+            <!-- Thỏa thuận phân xử trọng tài -->
+            <div class="body-terms-conditions__title">
+              <h4>Thỏa thuận phân xử trọng tài</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Phần này áp dụng cho bất kỳ tranh chấp nào NGOÀI RA KHÔNG BAO
+                GỒM TRANH CHẤP LIÊN QUAN ĐẾN CÁC YÊU CẦU KHIẾU NẠI ĐỐI VỚI VIỆC
+                THƯƠNG MẠI HOẶC ĐÁNG TIN CẬY LIÊN QUAN ĐẾN VIỆC THỰC THI HOẶC
+                HỢP LỆ CỦA HAVEN OF FAIRY. "s" QUYỀN SỞ HỮU TRÍ TUỆ. Thuật ngữ
+                “tranh chấp” có nghĩa là bất kỳ tranh chấp, hành động hoặc tranh
+                cãi nào khác giữa bạn và Haven of Fairy liên quan đến Dịch vụ
+                hoặc thỏa thuận này, cho dù trong hợp đồng, bảo hành, tra tấn,
+                quy chế, quy định, pháp lệnh hoặc bất kỳ cơ sở pháp lý hoặc công
+                bằng nào khác. “Tranh chấp” sẽ được hiểu theo nghĩa rộng nhất có
+                thể được theo luật.
+              </p>
+            </div>
+
+            <!-- Thỏa thuận phân xử trọng tài -->
+            <div class="body-terms-conditions__title">
+              <h4>Thỏa thuận phân xử trọng tài</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Phần này áp dụng cho bất kỳ tranh chấp nào NGOÀI RA KHÔNG BAO
+                GỒM TRANH CHẤP LIÊN QUAN ĐẾN CÁC YÊU CẦU KHIẾU NẠI ĐỐI VỚI VIỆC
+                THƯƠNG MẠI HOẶC ĐÁNG TIN CẬY LIÊN QUAN ĐẾN VIỆC THỰC THI HOẶC
+                HỢP LỆ CỦA HAVEN OF FAIRY. "s" QUYỀN SỞ HỮU TRÍ TUỆ. Thuật ngữ
+                “tranh chấp” có nghĩa là bất kỳ tranh chấp, hành động hoặc tranh
+                cãi nào khác giữa bạn và Haven of Fairy liên quan đến Dịch vụ
+                hoặc thỏa thuận này, cho dù trong hợp đồng, bảo hành, tra tấn,
+                quy chế, quy định, pháp lệnh hoặc bất kỳ cơ sở pháp lý hoặc công
+                bằng nào khác. “Tranh chấp” sẽ được hiểu theo nghĩa rộng nhất có
+                thể được theo luật.
+              </p>
+              <p>Thông báo về tranh chấp</p>
+              <p>
+                Trong trường hợp có tranh chấp, bạn hoặc Haven of Fairy phải đưa
+                cho bên kia một Thông báo về Tranh chấp, đó là một tuyên bố bằng
+                văn bản nêu rõ tên, địa chỉ và thông tin liên lạc của bên đưa ra
+                thông báo đó, các sự kiện dẫn đến tranh chấp, và yêu cầu cứu
+                trợ. Bạn phải gửi bất kỳ Thông báo Tranh chấp nào qua email đến:
+                cthavenofairy.com. Haven of Fairy sẽ gửi bất kỳ Thông báo Tranh
+                chấp nào cho bạn qua đường bưu điện đến địa chỉ của bạn nếu
+                chúng tôi có hoặc đến địa chỉ email của bạn. Bạn và Haven of
+                Fairy sẽ cố gắng giải quyết mọi tranh chấp thông qua thương
+                lượng không chính thức trong vòng sáu mươi (60) ngày kể từ ngày
+                Thông báo về Tranh chấp được gửi đi. Sau sáu mươi (60) ngày, bạn
+                hoặc Haven of Fairy có thể bắt đầu phân xử.
+              </p>
+            </div>
+
+            <!-- Ràng buộc Trọng tài -->
+            <div class="body-terms-conditions__title">
+              <h4>Ràng buộc Trọng tài</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Nếu bạn và Haven of Fairy không giải quyết bất kỳ tranh chấp nào
+                bằng thương lượng không chính thức, thì bất kỳ nỗ lực nào khác
+                để giải quyết tranh chấp sẽ chỉ được tiến hành bằng trọng tài
+                ràng buộc như được mô tả trong phần này. Bạn đang từ bỏ quyền
+                tranh tụng (hoặc tham gia với tư cách là một đảng viên hoặc
+                thành viên trong lớp) tất cả các tranh chấp tại tòa án trước
+                thẩm phán hoặc bồi thẩm đoàn. Tranh chấp sẽ được giải quyết bằng
+                trọng tài ràng buộc theo quy tắc trọng tài thương mại của Hiệp
+                hội Trọng tài Hoa Kỳ. Một trong hai bên có thể yêu cầu bất kỳ
+                lệnh tạm thời hoặc sơ bộ nào từ bất kỳ tòa án có thẩm quyền nào,
+                nếu cần thiết để bảo vệ quyền hoặc tài sản của bên đó trong khi
+                quá trình phân xử hoàn tất. Bất kỳ và tất cả các chi phí pháp
+                lý, kế toán và các khoản phí, lệ phí và chi phí khác mà bên
+                thắng kiện phải chịu sẽ do bên không thắng kiện chịu.
+              </p>
+            </div>
+
+            <!-- Đệ trình và Quyền riêng tư -->
+            <div class="body-terms-conditions__title">
+              <h4>Đệ trình và Quyền riêng tư</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Trong trường hợp bạn gửi hoặc đăng bất kỳ ý tưởng, đề xuất sáng
+                tạo, thiết kế, ảnh, thông tin, quảng cáo, dữ liệu hoặc đề xuất
+                nào, bao gồm cả ý tưởng cho các sản phẩm, dịch vụ, tính năng,
+                công nghệ hoặc khuyến mãi mới hoặc cải tiến, bạn đồng ý rõ ràng
+                rằng các nội dung gửi đó sẽ tự động được coi là không bí mật và
+                không độc quyền và sẽ trở thành tài sản duy nhất của Haven of
+                Fairy mà không có bất kỳ khoản bồi thường hoặc tín dụng nào cho
+                bạn. Haven of Fairy và các chi nhánh của nó sẽ không có nghĩa vụ
+                liên quan đến các bài gửi hoặc bài đăng đó và có thể sử dụng các
+                ý tưởng có trong các bài gửi hoặc bài đăng đó cho bất kỳ mục
+                đích nào trong bất kỳ phương tiện nào một cách vĩnh viễn, không
+                bao gồm, nhưng không giới hạn, phát triển, sản xuất và tiếp thị
+                các sản phẩm và dịch vụ sử dụng những ý tưởng đó.
+              </p>
+            </div>
+
+            <!-- Khuyến mại -->
+            <div class="body-terms-conditions__title">
+              <h4>Khuyến mại</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Đôi khi, Haven of Fairy có thể bao gồm các cuộc thi, chương
+                trình khuyến mãi, rút ​​thăm trúng thưởng hoặc các hoạt động
+                khác (“Khuyến mãi”) yêu cầu bạn gửi tài liệu hoặc thông tin liên
+                quan đến bản thân. Xin lưu ý rằng tất cả các Chương trình khuyến
+                mãi có thể được điều chỉnh bởi các quy tắc riêng có thể chứa các
+                yêu cầu về tính đủ điều kiện nhất định, chẳng hạn như các hạn
+                chế về độ tuổi và vị trí địa lý. Bạn có trách nhiệm đọc tất cả
+                các quy tắc của Chương trình khuyến mãi để xác định xem bạn có
+                đủ điều kiện tham gia hay không. Nếu bạn tham gia bất kỳ Chương
+                trình khuyến mãi nào, bạn đồng ý tuân theo và tuân thủ tất cả
+                các Quy tắc của Chương trình khuyến mãi.
+              </p>
+              <p>
+                Các điều khoản và điều kiện bổ sung có thể áp dụng cho các giao
+                dịch mua hàng hóa hoặc dịch vụ trên hoặc thông qua Dịch vụ, mà
+                các điều khoản và điều kiện được tạo thành một phần của Thỏa
+                thuận này bằng cách tham chiếu này.
+              </p>
+            </div>
+
+            <!-- Lỗi đánh máy -->
+            <div class="body-terms-conditions__title">
+              <h4>Lỗi đánh máy</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Trong trường hợp sản phẩm và / hoặc dịch vụ được liệt kê với giá
+                không chính xác hoặc thông tin không chính xác do lỗi đánh máy,
+                chúng tôi có quyền từ chối hoặc hủy bỏ bất kỳ đơn hàng nào đã
+                đặt cho sản phẩm và / hoặc dịch vụ được liệt kê với giá không
+                chính xác. Chúng tôi có quyền từ chối hoặc hủy bỏ bất kỳ đơn đặt
+                hàng nào như vậy cho dù đơn hàng đã được xác nhận hay chưa và
+                thẻ tín dụng của bạn đã bị trừ tiền. Nếu Được hỗ trợ bởi TCPDF
+                (www.tcpdf.org) thẻ tín dụng của bạn đã bị tính phí cho giao
+                dịch mua và đơn đặt hàng của bạn bị hủy, chúng tôi sẽ lập tức
+                cấp một khoản tín dụng vào tài khoản thẻ tín dụng hoặc tài khoản
+                thanh toán khác của bạn với số tiền tính phí.
+              </p>
+            </div>
+
+            <!-- Điều khoản khác-->
+            <div class="body-terms-conditions__title">
+              <h4>Điều khoản khác</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Nếu vì bất kỳ lý do gì mà tòa án có thẩm quyền nhận thấy bất kỳ
+                điều khoản nào hoặc một phần nào của Điều khoản & Điều kiện này
+                là không thể thi hành, phần còn lại của Điều khoản & Điều kiện
+                này sẽ tiếp tục có hiệu lực đầy đủ. Bất kỳ sự khước từ nào đối
+                với bất kỳ điều khoản nào trong các Điều khoản & Điều kiện này
+                sẽ chỉ có hiệu lực nếu được đại diện được ủy quyền của Haven of
+                Fairy ký kết bằng văn bản. Haven of Fairy sẽ được hưởng các biện
+                pháp trừng phạt hoặc đền bù công bằng khác (không có nghĩa vụ
+                đăng bất kỳ trái phiếu hoặc bảo đảm nào) trong trường hợp bạn có
+                bất kỳ vi phạm nào hoặc vi phạm có thể lường trước được. Haven
+                of Fairy điều hành và kiểm soát Dịch vụ Haven of Fairy từ các
+                văn phòng của mình tại Việt Nam. Dịch vụ không nhằm mục đích
+                phân phối hoặc sử dụng cho bất kỳ cá nhân hoặc tổ chức nào ở bất
+                kỳ khu vực tài phán hoặc quốc gia nào mà việc phân phối hoặc sử
+                dụng đó sẽ trái với luật pháp hoặc quy định. Theo đó, những
+                người chọn truy cập Dịch vụ Haven of Fairy từ các địa điểm khác
+                làm như vậy theo sáng kiến ​​của riêng họ và hoàn toàn chịu
+                trách nhiệm về việc tuân thủ luật pháp địa phương, nếu và trong
+                phạm vi luật địa phương được áp dụng. Các Điều khoản & Điều kiện
+                này (bao gồm và kết hợp Chính sách Quyền riêng tư của Haven of
+                Fairy) chứa đựng toàn bộ sự hiểu biết và thay thế cho tất cả
+                những hiểu biết trước đây giữa bạn và Haven of Fairy về chủ đề
+                của nó, và bạn không thể thay đổi hoặc sửa đổi. Các tiêu đề phần
+                được sử dụng trong Thỏa thuận này chỉ nhằm mục đích thuận tiện
+                và sẽ không được phép nhập khẩu hợp pháp.
+              </p>
+            </div>
+
+            <!-- Tuyên bố từ chối trách nhiệm-->
+            <div class="body-terms-conditions__title">
+              <h4>Tuyên bố từ chối trách nhiệm</h4>
+            </div>
+
+            <div class="body-terms-conditions__subtitle">
+              <p>
+                Haven of Fairy không chịu trách nhiệm về bất kỳ nội dung, mã
+                hoặc bất kỳ sự không chính xác nào khác.
+              </p>
+              <p>Haven of Fairy không cung cấp bảo hành hoặc đảm bảo.</p>
+              <p>
+                Trong mọi trường hợp, Haven of Fairy sẽ không chịu trách nhiệm
+                pháp lý đối với bất kỳ thiệt hại đặc biệt, trực tiếp, gián tiếp,
+                do hậu quả, hoặc ngẫu nhiên hoặc bất kỳ thiệt hại nào, cho dù là
+                trong một hành động hợp đồng, sơ suất hoặc sai phạm khác, phát
+                sinh từ hoặc liên quan đến việc sử dụng Dịch vụ hoặc nội dung
+                của Dịch vụ. Công ty có quyền bổ sung, xóa hoặc sửa đổi nội dung
+                trên Dịch vụ bất kỳ lúc nào mà không cần thông báo trước.
+              </p>
+              <p>
+                Dịch vụ Haven of Fairy và nội dung của nó được cung cấp "nguyên
+                trạng" và "sẵn có" mà không có bất kỳ bảo đảm hoặc tuyên bố nào
+                dưới bất kỳ hình thức nào, dù rõ ràng hay ngụ ý. Haven of Fairy
+                là nhà phân phối chứ không phải nhà xuất bản nội dung do bên thứ
+                ba cung cấp; như vậy, Haven of Fairy không thực hiện quyền kiểm
+                soát biên tập đối với nội dung đó và không đảm bảo hoặc tuyên bố
+                về tính chính xác, độ tin cậy hoặc đơn vị tiền tệ của bất kỳ
+                thông tin, nội dung, dịch vụ hoặc hàng hóa nào được cung cấp
+                hoặc truy cập thông qua Dịch vụ Haven of Fairy. Không giới hạn
+                những điều đã nói ở trên, Haven of Fairy đặc biệt từ chối mọi
+                bảo đảm và tuyên bố đối với bất kỳ nội dung nào được truyền trên
+                hoặc liên quan đến Dịch vụ Haven of Fairy hoặc trên các trang
+                web có thể xuất hiện dưới dạng liên kết trên Dịch vụ Haven of
+                Fairy, hoặc trong các sản phẩm được cung cấp như một phần của,
+                hoặc liên quan đến, Dịch vụ Haven of Fairy, bao gồm nhưng không
+                giới hạn bất kỳ bảo đảm nào về khả năng bán được, tính phù hợp
+                cho một mục đích cụ thể hoặc không vi phạm quyền của bên thứ ba.
+                Không có lời khuyên bằng miệng hoặc thông tin bằng văn bản được
+                cung cấp bởi Haven of Fairy hoặc bất kỳ chi nhánh nào của nó,
+                nhân viên, cán bộ, giám đốc, đại lý hoặc những thứ tương tự sẽ
+                tạo ra một bảo hành. Thông tin về giá cả và tình trạng còn hàng
+                có thể thay đổi mà không cần thông báo trước. Không giới hạn
+                những điều đã nói ở trên, Haven of Fairy không đảm bảo rằng Dịch
+                vụ Haven of Fairy sẽ không bị gián đoạn, không bị gián đoạn, kịp
+                thời hoặc không có lỗi.
+              </p>
+              <p>Liên hệ chúng tôi</p>
+              <p>
+                Đừng ngần ngại liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi
+                nào.
+              </p>
+
+              <ol class="body-terms-conditions__subtitle-list">
+                <li class="body-terms-conditions__subtitle-item">
+                  Qua Email: <span>cthavenoffairy.vn</span>
+                </li>
+                <li class="body-terms-conditions__subtitle-item">
+                  Qua số điện thoại: 123 456 789
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+  </body>
+</html>

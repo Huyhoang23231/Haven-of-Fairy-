@@ -1,0 +1,968 @@
+* {
+  top: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  background-color: #222;
+}
+
+#main {
+}
+
+/* Header */
+#header {
+  width: 1300px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-bottom: 2px solid #fff;
+  background-color: #222222;
+  position: sticky;
+  z-index: 1;
+}
+
+.header-navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-navbar__img {
+  width: 80px;
+  height: 81px;
+}
+
+.header-navbar__navbar-list {
+  position: relative;
+  display: flex;
+  line-height: 80px;
+}
+
+.header-navbar__navbar-item {
+  list-style: none;
+  margin: 0 30px;
+}
+
+.header-navbar__navbar-item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.header-navbar__navbar-item a:hover {
+  color: #ffb000;
+  cursor: pointer;
+}
+
+.header-navbar__navbar-item-highlighted a {
+  color: #ffb000;
+}
+
+.header-navbar__btn {
+  position: relative;
+  margin-top: 12px;
+  width: 160px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.header-navbar__btn:hover {
+  background-color: #ffb000;
+  border: none;
+  cursor: pointer;
+}
+
+.header-navbar__btn-des {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  font-weight: 600;
+}
+
+/* Body */
+#body {
+  position: relative;
+}
+
+.body-breadbrum__confirm {
+  width: 1300px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+}
+
+.body-breadbrum__circle {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-breadbrum__circle2 {
+  background: #fff;
+  margin-left: 10px;
+}
+
+.body-breadbrum__circle3 {
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+
+  margin-left: 10px;
+}
+
+.body-number > span {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.body-number2 > span {
+  font-weight: 600;
+}
+
+.body-number2 > span {
+  font-weight: 600;
+}
+
+.body-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.body-breadbrum__arrow {
+  content: "";
+  width: 60px;
+  height: 6px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  border-radius: 60px;
+  margin: 24px 0 0 12px;
+}
+
+.body-confirm__des {
+  width: 1330px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 600;
+  padding: 60px 0 0 60px;
+  font-weight: 300;
+}
+
+/* Xé giấy */
+/* .body-payment-bill__traiangle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-payment-bill__traiangle {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 20px solid blue;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+} */
+
+/* Khung chia Form */
+.body-payment-information {
+  width: 1300px;
+  height: auto;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Form Thông tin hóa đơn */
+.body-payment-bill__form {
+  width: 720px;
+  height: auto;
+  background-color: #fff;
+  /* border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-top: 16px solid #222222; */
+  border-radius: 20px;
+  position: relative;
+}
+
+/* MỐT FIX LẠI LỖI NÀY */
+.body-payment-bill__form-code {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-payment-bill__label1 {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.body-payment-bill__label2 {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.body-payment-bill__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.body-payment-bill__branding {
+  width: 110px;
+  height: 90px;
+}
+
+.body-payment-bill__heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body-payment-bill__heading p {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+/* Thông tin khách hàng */
+.body-payment-bill-information__customer {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.body-payment-bill-information__customer-title {
+  font-size: 18px;
+}
+
+.body-payment-bill-information__customer-info {
+  padding-top: 22px;
+}
+
+.body-payment-bill-information__customer-buyer {
+  display: flex;
+}
+
+.body-payment-bill-information__customer-fullname {
+}
+
+.body-payment-bill-information__customer-name {
+  font-weight: 600;
+  padding-left: 30px;
+}
+.body-payment-bill-information__customer-email {
+  display: flex;
+  padding-top: 20px;
+}
+
+.body-payment-bill-information__customer-emailaddress {
+}
+
+.body-payment-bill-information__customer-fullemail {
+  font-weight: 600;
+  padding-left: 106px;
+}
+
+/* Thông tin chi tiết */
+.body-payment-bill-information__customer-info-details {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 22px;
+}
+
+.body-payment-bill-information__customer-info-details-title {
+  font-size: 18px;
+}
+
+/* Tên khách sạn */
+.body-payment-bill-information__customer-info-details-info {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-payment-bill-information__customer-info-details-info-hotel {
+  display: flex;
+}
+
+.body-payment-bill-information__customer-info-details-info-hotel-ques {
+}
+.body-payment-bill-information__customer-info-details-info-hotel-fill {
+  font-weight: 600;
+  padding-left: 95px;
+}
+
+/* Thời gian */
+.body-payment-bill-information__customer-info-details-info-date {
+  padding-top: 20px;
+  display: flex;
+}
+.body-payment-bill-information__customer-info-details-info-date-ques {
+}
+.body-payment-bill-information__customer-info-details-info-date-fill {
+  font-weight: 600;
+  padding-left: 128px;
+}
+
+/* Loại phòng */
+.body-payment-bill-information__customer-info-details-roomtype {
+  padding-top: 20px;
+  display: flex;
+}
+.body-payment-bill-information__customer-info-details-roomtype-ques {
+}
+.body-payment-bill-information__customer-info-details-roomtype-fill {
+  font-weight: 600;
+  padding-left: 121px;
+}
+
+/* Số lượng phòng */
+.body-payment-bill-information__customer-info-details-info-roomquantity {
+  padding-top: 20px;
+  display: flex;
+}
+.body-payment-bill-information__customer-info-details-info-roomquantity-ques {
+}
+.body-payment-bill-information__customer-info-details-info-roomquantity-title {
+  font-weight: 600;
+  padding-left: 88px;
+}
+
+/* Số lượng phòng phụ */
+.body-payment-bill-information__customer-info-details-info-roomquantity-extra {
+  padding-top: 20px;
+  display: flex;
+}
+.body-payment-bill-information__customer-info-details-info-roomquantity-extra-ques {
+}
+.body-payment-bill-information__customer-info-details-info-roomquantity-extra-fill {
+  font-weight: 600;
+  padding-left: 60px;
+}
+
+/* Tổng tiền phòng */
+.body-payment-bill-information__customer-info-details-info-roomtotal {
+  padding-top: 20px;
+  display: flex;
+}
+
+.body-payment-bill-information__customer-info-details-info-roomtotal-que {
+}
+
+.body-payment-bill-information__customer-info-details-info-roomtotal-extra {
+  padding-top: 20px;
+  display: flex;
+}
+
+.body-payment-bill-information__customer-info-details-info-roomtotal-extra-ques {
+}
+
+/* Đường Line cho Thông tin chi tiết */
+.body-payment-bill-information__customer-info-separate {
+  content: "";
+  width: 100%;
+  border: 1px dashed #000000;
+  margin-top: 30px;
+}
+
+/* Tổng cộng tiền thanh toán */
+.body-payment-bill-information__customer-info-totalprice {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-payment-bill-information__customer-info-totalprice span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Tổng tiền tính vào thẻ tín dụng */
+.body-payment-bill-information__customer-info-totalcredit {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-payment-bill-information__customer-info-totalcredit span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Bar Code */
+.body-payment-bill-information__customer-info-qr {
+  padding-top: 40px;
+}
+
+.body-payment-bill-information__customer-info-qr-img {
+  width: 100%;
+  height: 60px;
+}
+
+/* Hóa đơn tự động */
+.body-payment-bill-information__customer-info-billexport {
+  width: 100%;
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Thông tin phòng */
+.body-room__information-room {
+  width: 420px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.body-room__information-label {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+.body-room__information-room-standard {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+.body-room__information-sublabelroom {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+
+.body-room__information-img {
+  width: 360px;
+  height: 180px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.body-room__information-picture {
+  width: 360px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.body-room__information-icon {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  color: #a49677;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.body-room__infomation-icon-wifi {
+  display: flex;
+}
+
+.body-room__infomation-icon-wifi1 {
+  padding-right: 6px;
+  font-weight: 600;
+}
+
+.body-room__infomation-icon-phone {
+  display: flex;
+}
+
+.body-room__infomation-icon-phone1 {
+  padding-right: 6px;
+  font-weight: 600;
+}
+
+.body-room__infomation-icon-area {
+  display: flex;
+}
+.body-room__infomation-icon-area1 {
+  padding-right: 6px;
+  font-weight: 600;
+}
+
+.body-room__information-separare1 {
+  width: 360px;
+  border-bottom: 3px dotted #222222;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.body-room__information-check {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.body-room__information-human {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.body-room__information-human-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-human-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-bed {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-bed-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-bed-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-room-quantity {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-room-quantity-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-room-quantity-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-room-class {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-room-class-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-room-class-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+  line-height: 22px;
+}
+
+.body-room__information-separare2 {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  border-bottom: 3px dotted #222222;
+  margin-top: 20px;
+}
+
+.body-room__information-check-in-and-out {
+  padding-top: 20px;
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.body-room__information-stay {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.body-room__information-stay-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-stay-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-checkin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-checkin-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-checkin-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-checkout {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-checkout-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-checkout-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-separare3 {
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+  border-bottom: 3px dotted #222222;
+  margin-top: 20px;
+}
+
+.body-room__information-customer {
+  padding: 20px 0 28px 0;
+  width: 360px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.body-room__information-customer-name {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.body-room__information-customer-name-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-customer-name-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-customer-email {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-customer-email-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-customer-email-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.body-room__information-customer-phone {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.body-room__information-customer-phone-circle {
+  width: 120px;
+  height: 32px;
+  border-radius: 30px;
+  background: linear-gradient(
+    134deg,
+    #f9e2af 0%,
+    rgba(249, 226, 175, 0.53) 79.22%,
+    rgba(249, 226, 175, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.body-room__information-customer-phone-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+/* Footer */
+#footer {
+  background-color: #222;
+}
+
+.footer-container {
+  width: 1300px;
+  height: 480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #fff;
+  margin-top: 200px;
+}
+
+.footer-brand {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-brand__img {
+}
+
+.footer-brand__facebook {
+  margin-top: 10px;
+}
+
+.footer-brand__facebook > a {
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.footer-brand__instargram {
+  margin-top: 10px;
+}
+
+.footer-brand__instargram > a {
+  text-decoration: none;
+  color: #ae327d;
+}
+
+.footer-brand__watermark {
+  margin-top: 10px;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.footer-info {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info__item {
+  margin: 0 60px;
+  list-style: none;
+}
+
+.footer-info__item h4 {
+  color: #f9e2af;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.footer-info__item p {
+  color: #fff;
+  margin: 20px 0;
+}

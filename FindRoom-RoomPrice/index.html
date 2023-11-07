@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Haven of Fairy - Giá phòng</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header-navbar__navbar-item" onclick="dieu_huong_dichvu()">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-room__card-wrapper">
+          <div class="body-room__card-room">
+            <div class="body-room__card-standard-room">
+              <img
+                src="./assets/css/img/standard room.jpeg"
+                alt=""
+                class="body-room__card-picture"
+              />
+              <div class="body-room__card-arrow">
+                <div class="body-room__card-arrow__left">
+                  <i class="bi bi-caret-left-fill"></i>
+                </div>
+                <div class="body-room__card-arrow__right">
+                  <i class="bi bi-caret-right-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="body-room__card-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251274.0173677341!2d103.95503534335555!3d10.248957436937754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a78c62b49eda17%3A0x8aa79fbbdd72cdb!2zUGjDuiBRdeG7kWM!5e0!3m2!1svi!2s!4v1693195894467!5m2!1svi!2s"
+              width="520"
+              height="420"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="body-room__card-googlemap"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="body-room__intro-and-price">
+          <div class="body-room__introduction">
+            <div class="body-room__label">
+              <h2>Phòng Standard Room</h2>
+            </div>
+
+            <div class="body-room__sub-label">
+              <p>
+                <i class="body-room__sub-label__icon bi bi-geo-alt-fill"></i>
+                <a href="https://goo.gl/maps/VfGbsKZz8A9jBF5a7"
+                  >Vườn quốc gia Phú Quốc</a
+                >
+              </p>
+            </div>
+
+            <div class="body-room__des">
+              <span>
+                Hạng phòng Standard Room là hạng phòng tiêu chuẩn của Haven of
+                Fairy với không gian được sắp xếp một cách khéo léo và gọn gàng,
+                cho bạn một không gian vừa đủ để tận hưởng khoảnh khắc của riêng
+                mình. Tất cả các vật dụng thiết yếu như máy sấy, bàn ủi, ấm đun
+                đều được trang bị đầy đủ.
+              </span>
+            </div>
+          </div>
+
+          <div class="body-room__price">
+            <div class="body-room__room-class">
+              <p>Standard Room Single</p>
+              <p>2.000.000 đồng /<br /><span>đêm</span><br /></p>
+            </div>
+
+            <div class="body-room__separate"></div>
+
+            <div class="body-room__check">
+              <div class="body-room__checkin">
+                <p>Nhận phòng</p>
+                <span>31/07/2023</span>
+              </div>
+
+              <div class="body-room__check-separate1"></div>
+
+              <div class="body-room__checkout">
+                <p>Trả phòng</p>
+                <span>01/08/2023</span>
+              </div>
+
+              <div class="body-room__check-separate2"></div>
+
+              <div class="body-room__checkhuman">
+                <p>Số người</p>
+                <span>2 người</span>
+              </div>
+            </div>
+
+            <div
+              class="body-room__price-button"
+              onclick="dieu_huong_xacnhan_datphong()"
+            >
+              <span>Đặt phòng ngay</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-room__utilities">
+          <div class="body-room__utilities-label">
+            <h2>Các tiện ích bao gồm</h2>
+          </div>
+
+          <div class="body-room__utilities-icon">
+            <div class="body-room__wifi">
+              <p>
+                <i class="body-room__wifi-icon bi bi-wifi"></i>
+                Wifi
+              </p>
+            </div>
+            <div class="body-room__hotline">
+              <p>
+                <i class="body-room__hotline-icon bi bi-telephone-fill"></i>
+                Hỗ trợ 24/7
+              </p>
+            </div>
+            <div class="body-room__area">
+              <p>
+                <i class="body-room__area-icon bi bi-bounding-box-circles"></i>
+                24m2
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-room__options-label">
+          <h2>Các lựa chọn khác dành cho bạn</h2>
+        </div>
+
+        <!-- Standard Room -->
+        <div class="body-room__options">
+          <div class="body-room__options-picture">
+            <img
+              src="./assets/css/img/standard room.jpeg"
+              alt=""
+              class="body-room__img"
+            />
+          </div>
+
+          <div class="body-room__options-information">
+            <h4>Phòng Standard Room</h4>
+            <p>2 người - 1 Phòng ngủ - 1 Giường ngủ</p>
+            <div class="body-room__options-information-line"></div>
+
+            <div class="body-room__options-information-others-list">
+              <div class="body-room__options-information-others-item1">
+                <div class="body-room__options-information-utilities">
+                  Tiện ích
+                </div>
+
+                <div class="body-room__options-information-wifi">
+                  <i
+                    class="body-room__options-information-icon bi bi-wifi-2"
+                  ></i>
+                  <span>Wifi tốc độ cao</span>
+                </div>
+
+                <div class="body-room__options-information-wifi">
+                  <i
+                    class="body-room__options-information-icon bi bi-telephone-fill"
+                  ></i>
+                  <span>Hỗ trợ 24/7</span>
+                </div>
+              </div>
+
+              <div class="body-room__options-information-others-item2">
+                <div class="body-room__options-information-acreage">
+                  <div class="body-room__options-information-acreage-container">
+                    Diện tích
+                  </div>
+                  <span>24m2</span>
+                </div>
+
+                <div class="body-room__options-information-rent-cost">
+                  <div
+                    class="body-room__options-information-rent-cost-container"
+                  >
+                    Giá thuê
+                  </div>
+                  <span>Từ 2.000.000 đồng / đêm</span>
+                </div>
+
+                <div class="body-room__options-information-room-ready">
+                  <div
+                    class="body-room__options-information-room-ready-container"
+                  >
+                    Phòng sẵn sàng
+                  </div>
+                  <span>Có thể thuê ngay</span>
+                </div>
+
+                <div class="body-room__options-button">
+                  <span>Chọn phòng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Room Twin -->
+        <div class="body-room__options">
+          <div class="body-room__options-picture">
+            <img
+              src="./assets/css/img/standard-room-twin.jpg"
+              alt=""
+              class="body-room__img"
+            />
+          </div>
+
+          <div class="body-room__options-information">
+            <h4>Phòng Standard Room Twin View</h4>
+            <p>2 người - 1 Phòng ngủ - 1 Giường ngủ</p>
+            <div class="body-room__options-information-line"></div>
+
+            <div class="body-room__options-information-others-list">
+              <div class="body-room__options-information-others-item1">
+                <div class="body-room__options-information-utilities">
+                  Tiện ích
+                </div>
+
+                <div class="body-room__options-information-wifi">
+                  <i
+                    class="body-room__options-information-icon bi bi-wifi-2"
+                  ></i>
+                  <span>Wifi tốc độ cao</span>
+                </div>
+
+                <div class="body-room__options-information-phone">
+                  <i
+                    class="body-room__options-information-icon bi bi-telephone-fill"
+                  ></i>
+                  <span>Hỗ trợ 24/7</span>
+                </div>
+
+                <div class="body-room__options-information-kitchen">
+                  <img
+                    src="./assets/css/img/Kitchen.png"
+                    class="body-room__options-information-icon"
+                    alt=""
+                  />
+                  <span>Nhà bếp hiện đại</span>
+                </div>
+              </div>
+
+              <div class="body-room__options-information-others-item2">
+                <div class="body-room__options-information-acreage">
+                  <div class="body-room__options-information-acreage-container">
+                    Diện tích
+                  </div>
+                  <span>27m2</span>
+                </div>
+
+                <div class="body-room__options-information-rent-cost">
+                  <div
+                    class="body-room__options-information-rent-cost-container"
+                  >
+                    Giá thuê
+                  </div>
+                  <span>Từ 4.000.000 đồng / đêm</span>
+                </div>
+
+                <div class="body-room__options-information-room-ready">
+                  <div
+                    class="body-room__options-information-room-ready-container"
+                  >
+                    Phòng sẵn sàng
+                  </div>
+                  <span>Có thể thuê ngay</span>
+                </div>
+
+                <div class="body-room__options-button">
+                  <span>Chọn phòng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Superior Room -->
+        <div class="body-room__options">
+          <div class="body-room__options-picture">
+            <img
+              src="./assets/css/img/Superior-Room.jpg"
+              alt=""
+              class="body-room__img"
+            />
+          </div>
+
+          <div class="body-room__options-information">
+            <h4>Phòng Superior Room</h4>
+            <p>2 người - 1 Phòng ngủ - 1 Giường ngủ</p>
+            <div class="body-room__options-information-line"></div>
+
+            <div class="body-room__options-information-others-list">
+              <div class="body-room__options-information-others-item1">
+                <div class="body-room__options-information-utilities">
+                  Tiện ích
+                </div>
+
+                <div class="body-room__options-information-wifi">
+                  <i
+                    class="body-room__options-information-icon bi bi-wifi-2"
+                  ></i>
+                  <span>Wifi tốc độ cao</span>
+                </div>
+
+                <div class="body-room__options-information-phone">
+                  <i
+                    class="body-room__options-information-icon bi bi-telephone-fill"
+                  ></i>
+                  <span>Hỗ trợ 24/7</span>
+                </div>
+
+                <div class="body-room__options-information-kitchen">
+                  <img
+                    src="./assets/css/img/Kitchen.png"
+                    class="body-room__options-information-icon"
+                    alt=""
+                  />
+                  <span>Nhà bếp hiện đại</span>
+                </div>
+
+                <div class="body-room__options-information-tree">
+                  <i
+                    class="body-room__options-information-icon bi bi-tree-fill"
+                  ></i>
+                  <span>Không gian xanh</span>
+                </div>
+              </div>
+
+              <div class="body-room__options-information-others-item2">
+                <div class="body-room__options-information-acreage">
+                  <div class="body-room__options-information-acreage-container">
+                    Diện tích
+                  </div>
+                  <span>24m2</span>
+                </div>
+
+                <div class="body-room__options-information-rent-cost">
+                  <div
+                    class="body-room__options-information-rent-cost-container"
+                  >
+                    Giá thuê
+                  </div>
+                  <span>Từ 5.000.000 đồng / đêm</span>
+                </div>
+
+                <div class="body-room__options-information-room-ready">
+                  <div
+                    class="body-room__options-information-room-ready-container"
+                  >
+                    Phòng sẵn sàng
+                  </div>
+                  <span>Có thể thuê ngay</span>
+                </div>
+
+                <div class="body-room__options-button">
+                  <span>Chọn phòng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deluxe Room -->
+        <div class="body-room__options">
+          <div class="body-room__options-picture">
+            <img
+              src="./assets/css/img/Deluxe-Room.jpg"
+              alt=""
+              class="body-room__img"
+            />
+          </div>
+
+          <div class="body-room__options-information">
+            <h4>Phòng Deluxe Room</h4>
+            <p>2 người - 1 Phòng ngủ - 1 Giường ngủ</p>
+            <div class="body-room__options-information-line"></div>
+
+            <div class="body-room__options-information-others-list">
+              <div class="body-room__options-information-others-item1">
+                <div class="body-room__options-information-utilities">
+                  Tiện ích
+                </div>
+
+                <div class="body-room__options-information-wifi">
+                  <i
+                    class="body-room__options-information-icon bi bi-wifi-2"
+                  ></i>
+                  <span>Wifi tốc độ cao</span>
+                </div>
+
+                <div class="body-room__options-information-phone">
+                  <i
+                    class="body-room__options-information-icon bi bi-telephone-fill"
+                  ></i>
+                  <span>Hỗ trợ 24/7</span>
+                </div>
+
+                <div class="body-room__options-information-kitchen">
+                  <img
+                    src="./assets/css/img/Kitchen.png"
+                    class="body-room__options-information-icon"
+                    alt=""
+                  />
+                  <span>Nhà bếp hiện đại</span>
+                </div>
+
+                <div class="body-room__options-information-tree">
+                  <i
+                    class="body-room__options-information-icon bi bi-tree-fill"
+                  ></i>
+                  <span>Không gian xanh</span>
+                </div>
+
+                <div class="body-room__options-information-bathtub">
+                  <img
+                    src="./assets/css/img/phongtam.png"
+                    class="body-room__options-information-icon"
+                    alt=""
+                  />
+                  <span>Phòng tắm riêng</span>
+                </div>
+              </div>
+
+              <div class="body-room__options-information-others-item2">
+                <div class="body-room__options-information-acreage">
+                  <div class="body-room__options-information-acreage-container">
+                    Diện tích
+                  </div>
+                  <span>28m2</span>
+                </div>
+
+                <div class="body-room__options-information-rent-cost">
+                  <div
+                    class="body-room__options-information-rent-cost-container"
+                  >
+                    Giá thuê
+                  </div>
+                  <span>Từ 10.000.000 đồng / đêm</span>
+                </div>
+
+                <div class="body-room__options-information-room-ready">
+                  <div
+                    class="body-room__options-information-room-ready-container"
+                  >
+                    Phòng sẵn sàng
+                  </div>
+                  <span>Có thể thuê ngay</span>
+                </div>
+
+                <div class="body-room__options-button">
+                  <span>Chọn phòng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_chitietphong() {
+        location.assign("http://127.0.0.1:5500/RoomDetail/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_xacnhan_datphong() {
+        location.assign(
+          "http://127.0.0.1:5500/ConfirmInformation-Booking/index.html"
+        );
+      }
+    </script>
+  </body>
+</html>

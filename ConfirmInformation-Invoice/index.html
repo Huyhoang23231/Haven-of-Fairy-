@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Haven of Fairy - Xác nhận thông tin - Thanh toán thẻ</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header-navbar__navbar-item" onclick="dieu_huong_dichvu()">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-breadbrum__confirm">
+          <!-- Bước 1 -->
+          <div class="body-breadbrum__circle">
+            <div class="body-number">
+              <span>1</span>
+            </div>
+          </div>
+
+          <div class="body-label">
+            <p>Đặt phòng</p>
+          </div>
+
+          <div class="body-breadbrum__arrow"></div>
+
+          <!-- Bước 2 -->
+          <div class="body-breadbrum__circle body-breadbrum__circle2">
+            <div class="body-number body-number2">
+              <span>2</span>
+            </div>
+          </div>
+
+          <div class="body-label body-label2">
+            <p>Xác nhận</p>
+          </div>
+
+          <div class="body-breadbrum__arrow body-breadbrum__arrow2"></div>
+
+          <!-- Bước 3 -->
+          <div class="body-breadbrum__circle body-breadbrum__circle3">
+            <div class="body-number body-number3">
+              <span>3</span>
+            </div>
+          </div>
+
+          <div class="body-label body-label3">
+            <p>Gửi hóa đơn</p>
+          </div>
+        </div>
+
+        <div class="body-confirm__des">
+          <h2>Xác nhận thông tin thanh toán của bạn</h2>
+        </div>
+
+        <!-- Form Các hình thức thanh toán -->
+        <div class="body-payment-information">
+          <div class="body-payment-information__form">
+            <div class="body-payment__label">
+              <p>Các hình thức thanh toán</p>
+            </div>
+
+            <div class="body-payment__options">
+              <!-- Lựa chọn thanh toán tiền mặt -->
+              <label class="radio" onclick="dieu_huong_thanhtoantienmat()">
+                <input
+                  type="radio"
+                  value="Thanh toán tiền mặt"
+                  name="payment"
+                />
+                Thanh toán tiền mặt
+                <span></span>
+              </label>
+              <!-- Lựa chọn thanh toán thẻ -->
+              <label class="radio">
+                <input type="radio" value="Thanh toán thẻ" name="payment" />
+                Thanh toán thẻ
+                <span></span>
+              </label>
+            </div>
+
+            <!-- Chi tiết thanh toán thẻ -->
+            <div class="body-confirm__payment-card-container">
+              <div class="body-confirm__payment-card-label">
+                <p>Chi tiết thanh toán thẻ</p>
+              </div>
+
+              <div class="body-confirm__payment-card-items">
+                <!-- Tên chủ thẻ -->
+                <div class="body-confirm__payment-card-name">
+                  <div class="body-confirm__payment-card-name-title">
+                    <p>Tên chủ thẻ</p>
+                  </div>
+
+                  <div class="body-confirm__payment-card-name-fill">
+                    <i
+                      class="body-confirm__payment-card-name-fill-icon bi bi-person"
+                    ></i>
+                    <input type="text" placeholder="Nhập tên chủ thẻ" />
+                  </div>
+                </div>
+
+                <!-- Số thẻ của bạn - Ngày hết hạn - Số CVV-->
+                <div class="body-confirm__payment-card-number">
+                  <div class="body-confirm__payment-card-number-wrapper">
+                    <!-- Số thẻ của bạn -->
+                    <div class="body-confirm__payment-card-number-title">
+                      <p>Số thẻ của bạn</p>
+                    </div>
+
+                    <div class="body-confirm__payment-card-number-fill">
+                      <i
+                        class="body-confirm__payment-card-number-fill-icon bi bi-credit-card"
+                      ></i>
+                      <input type="number" placeholder="XXXX XXXX XXXX XXXX" />
+                      <!-- MỐT CHỈNH LẠI PHẦN INPUT NÀY -->
+                    </div>
+                  </div>
+
+                  <div class="body-confirm__payment-card-date-wrapper">
+                    <!-- Ngày hết hạn -->
+                    <div class="body-confirm__payment-card-date-title">
+                      <p>Ngày hết hạn</p>
+                    </div>
+
+                    <div class="body-confirm__payment-card-date-fill">
+                      <i
+                        class="body-confirm__payment-card-date-fill-icon bi bi-calendar2-event"
+                      ></i>
+                      <input type="text" placeholder="mm / yy" />
+                    </div>
+                  </div>
+
+                  <div class="body-confirm__payment-card-cvv-wrapper">
+                    <!-- Số CVV -->
+                    <div class="body-confirm__payment-card-cvv-title">
+                      <p>Số CVV</p>
+                    </div>
+
+                    <div class="body-confirm__payment-card-cvv-fill">
+                      <i
+                        class="body-confirm__payment-card-cvv-fill-icon bi bi-shield"
+                      ></i>
+                      <input type="text" placeholder="CVV" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mã ZIP - Thành phố - Quốc gia -->
+                <div class="body-confirm__payment-card-place">
+                  <div class="body-confirm__payment-card-zip-wrapper">
+                    <!-- Mã ZIP -->
+                    <div class="body-confirm__payment-card-zip-title">
+                      <p>Mã ZIP</p>
+                    </div>
+
+                    <div class="body-confirm__payment-card-zip-fill">
+                      <img
+                        src="./assets/css/img/ZIP.png"
+                        alt=""
+                        class="body-confirm__payment-card-zip-fill-icon"
+                      />
+                      <input type="text" placeholder="Mã ZIP" />
+                    </div>
+                  </div>
+
+                  <div class="body-confirm__payment-card-city-wrapper">
+                    <!-- Thành phố -->
+                    <div class="body-confirm__payment-card-city-title">
+                      <p>Thành phố</p>
+                    </div>
+
+                    <div class="body-confirm__payment-card-city-fill">
+                      <i
+                        class="body-confirm__payment-card-city-fill-icon bi bi-hospital"
+                      ></i>
+                      <input type="text" placeholder="Thành phố" />
+                    </div>
+                  </div>
+
+                  <div class="body-confirm__payment-card-country-wrapper">
+                    <!-- Quốc gia -->
+                    <div class="body-confirm__payment-card-country-title">
+                      <p>Quốc gia</p>
+                    </div>
+
+                    <div class="body-confirm__payment-card-country-fill">
+                      <i
+                        class="body-confirm__payment-card-country-fill-icon bi bi-globe-americas"
+                      ></i>
+                      <input type="text" placeholder="Quốc gia" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Đường Line 1 -->
+                <div class="body-confirm__payment-card-seraparate"></div>
+
+                <!-- Tạm tính và khuyến mãi -->
+                <div class="body-confirm__payment-card-price-container">
+                  <div class="body-confirm__payment-card-price-provisional">
+                    <p>Tạm tính</p>
+                    <span>2.000.000 VND</span>
+                  </div>
+                  <div class="body-confirm__payment-card-price-sale">
+                    <p>Khuyến mãi</p>
+                    <span>0 VND</span>
+                  </div>
+                </div>
+
+                <!-- Đường Line 2 -->
+                <div class="body-confirm__payment-card-seraparate2"></div>
+
+                <!-- Tổng cộng -->
+                <div class="body-confirm__payment-card-total">
+                  <p>Tổng cộng</p>
+                  <span>2.000.000 VND</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chi tiết thanh toán -->
+            <div class="body-confirm__payment-details">
+              <div class="body-confirm__payment-details-label">
+                <p>Chi tiết thanh toán</p>
+              </div>
+
+              <div class="body-confirm__payment-details-infor">
+                <div class="body-confirm__payment-details-room">
+                  <div class="body-confirm__payment-details-room-quantity">
+                    <p>1 x Standard Room x 1 đêm</p>
+                  </div>
+
+                  <div class="body-confirm__payment-details-room-price">
+                    <p>2.000.000 VND</p>
+                  </div>
+                </div>
+
+                <div class="body-confirm__payment-details-sale">
+                  <div class="body-confirm__payment-details-sale-title">
+                    <p>Khuyến mãi:</p>
+                  </div>
+
+                  <div class="body-confirm__payment-details-sale-price">
+                    <p>0 VND</p>
+                  </div>
+                </div>
+
+                <div class="body-confirm__payment-details-separeate"></div>
+
+                <div class="body-confirm__payment-details-total">
+                  <p>2.000.000 VND</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Điều khoản và điều kiện -->
+            <div class="body-confirm__privacy">
+              <div class="body-confirm__privacy-label">
+                <p>
+                  Khi nhấn nút này bạn công nhận mình đã đọc và đồng ý với các
+                  <a href="http://127.0.0.1:5500/Terms-Conditions/index.html"
+                    >Điều khoản và Điều kiện</a
+                  >
+                  và
+                  <a href="http://127.0.0.1:5500/Privacy%20Policy/index.html"
+                    >Chính sách quyền riêng tư</a
+                  >
+                  của Haven of Fairy
+                </p>
+              </div>
+
+              <div
+                class="body-confirm__privacy-button"
+                onclick="dieu_huong_xacnhan_datphong()"
+              >
+                XÁC NHẬN ĐẶT PHÒNG
+              </div>
+            </div>
+          </div>
+
+          <!-- Thông tin phòng -->
+          <div class="body-room__information-room">
+            <div class="body-room__information-label">
+              <h3>Thông tin phòng</h3>
+            </div>
+
+            <div class="body-room__information-room-standard">
+              <h3>Standard Room</h3>
+            </div>
+
+            <div class="body-room__information-sublabelroom">
+              <p>Haven of Fairy Phú Quốc</p>
+            </div>
+
+            <div class="body-room__information-img">
+              <img
+                src="./assets/css/img/standard room.jpeg"
+                alt=""
+                class="body-room__information-picture"
+              />
+            </div>
+
+            <div class="body-room__information-icon">
+              <!-- Wifi -->
+              <div class="body-room__infomation-icon-wifi">
+                <i class="body-room__infomation-icon-wifi1 bi bi-wifi"></i>
+                <p>Wifi tốc độ cao</p>
+              </div>
+              <!-- Phone -->
+              <div class="body-room__infomation-icon-phone">
+                <i
+                  class="body-room__infomation-icon-phone1 bi bi-telephone-fill"
+                ></i>
+                <p>Hỗ trợ 24/7</p>
+              </div>
+              <!-- Area -->
+              <div class="body-room__infomation-icon-area">
+                <i class="body-room__infomation-icon-area1 bi bi-textarea"></i>
+                <p>24m2</p>
+              </div>
+            </div>
+
+            <div class="body-room__information-separare1"></div>
+
+            <div class="body-room__information-check">
+              <div class="body-room__information-human">
+                <div class="body-room__information-human-circle">
+                  <p>Khách / phòng</p>
+                </div>
+
+                <div class="body-room__information-human-title">
+                  <span>1 người</span>
+                </div>
+              </div>
+              <div class="body-room__information-bed">
+                <div class="body-room__information-bed-circle">
+                  <p>Kiểu giường</p>
+                </div>
+
+                <div class="body-room__information-bed-title">
+                  <span>Giường đôi</span>
+                </div>
+              </div>
+              <div class="body-room__information-room-quantity">
+                <div class="body-room__information-room-quantity-circle">
+                  <p>Số lượng phòng</p>
+                </div>
+
+                <div class="body-room__information-room-quantity-title">
+                  <span>1 phòng</span>
+                </div>
+              </div>
+
+              <div class="body-room__information-room-class">
+                <div class="body-room__information-room-class-circle">
+                  <p>Hạng phòng</p>
+                </div>
+
+                <div class="body-room__information-room-class-title">
+                  <span
+                    >Standard Room - Haven of <br />Fairy Phú Quốc<br
+                  /></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-room__information-separare2"></div>
+
+            <div class="body-room__information-check-in-and-out">
+              <div class="body-room__information-stay">
+                <div class="body-room__information-stay-circle">
+                  <p>Số đêm nghỉ</p>
+                </div>
+
+                <div class="body-room__information-stay-title">
+                  <span>1 đêm</span>
+                </div>
+              </div>
+              <div class="body-room__information-checkin">
+                <div class="body-room__information-checkin-circle">
+                  <p>Nhận phòng</p>
+                </div>
+                <div class="body-room__information-checkin-title">
+                  <span>31/07/2023 - Từ 2:00 AM</span>
+                </div>
+              </div>
+              <div class="body-room__information-checkout">
+                <div class="body-room__information-checkout-circle">
+                  <p>Trả phòng</p>
+                </div>
+
+                <div class="body-room__information-checkout-title">
+                  <span>01/08/2023 - Trước 1:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-room__information-separare3"></div>
+
+            <div class="body-room__information-customer">
+              <div class="body-room__information-customer-name">
+                <div class="body-room__information-customer-name-circle">
+                  <p>Tên khách</p>
+                </div>
+
+                <div class="body-room__information-customer-name-title">
+                  <span> Nguyễn Văn A</span>
+                </div>
+              </div>
+
+              <div class="body-room__information-customer-email">
+                <div class="body-room__information-customer-email-circle">
+                  <p>Email</p>
+                </div>
+
+                <div class="body-room__information-customer-email-title">
+                  <span>nguyenvana@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="body-room__information-customer-phone">
+                <div class="body-room__information-customer-phone-circle">
+                  <p>Số điện thoại</p>
+                </div>
+
+                <div class="body-room__information-customer-phone-title">
+                  <span>0902123456</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_thanhtoantienmat() {
+        location.assign(
+          "http://127.0.0.1:5500/ConfirmInformation-Confirm/index.html"
+        );
+      }
+    </script>
+
+    <script>
+      function dieu_huong_xacnhan_datphong() {
+        location.assign(
+          "http://127.0.0.1:5500/ConfirmInformation-Bill/index.html"
+        );
+      }
+    </script>
+  </body>
+</html>

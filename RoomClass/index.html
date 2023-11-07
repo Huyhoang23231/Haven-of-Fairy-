@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/css/img/Vector.png"
+      type="image/x-icon"
+    />
+    <title>Haven of Fairy - Hạng phòng</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div class="header-navbar__logo">
+          <img
+            src="./assets/css/img/Vector.png"
+            class="header-navbar__img"
+            alt=""
+            onclick="dieu_huong_trangchu()"
+          />
+        </div>
+
+        <nav class="header-navbar__navbar-list">
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_trangchu()"
+          >
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header-navbar__navbar-item" onclick="dieu_huong_dichvu()">
+            <a href="#">Dịch vụ</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item header-navbar__navbar-item-highlighted"
+            onclick="dieu_huong_hangphong()"
+          >
+            <a href="#">Hạng phòng</a>
+          </li>
+          <li
+            class="header-navbar__navbar-item"
+            onclick="dieu_huong_vechungtoi()"
+          >
+            <a href="#">Về chúng tôi</a>
+          </li>
+        </nav>
+
+        <div class="header-navbar__btn" onclick="dieu_huong_timphong()">
+          <span class="header-navbar__btn-des">Tìm phòng</span>
+        </div>
+      </div>
+
+      <div id="body">
+        <div class="body-container-room-options">
+          <div class="body-container-room-img">
+            <img
+              src="./assets/css/img/standard room.jpeg"
+              alt=""
+              class="body-container-room-picture"
+            />
+          </div>
+
+          <ul class="body-container-room-list">
+            <li
+              class="body-container-room-item body-container-room-item-underline"
+            >
+              <a href="#" class="">Standard room</a>
+            </li>
+
+            <li
+              class="body-container-room-item body-container-room-item-transparent"
+            >
+              <a href="#" class="">Superior room</a>
+            </li>
+
+            <li
+              class="body-container-room-item body-container-room-item-transparent"
+            >
+              <a href="#" class="">Deluxe room</a>
+            </li>
+
+            <li
+              class="body-container-room-item body-container-room-item-transparent"
+            >
+              <a href="#" class="">Suite room</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="body-title">
+          <h1>CÁC HẠNG PHÒNG</h1>
+        </div>
+
+        <div
+          class="body-container-introduct-room-background body-container-introduct-room-background-margin"
+        >
+          <div class="body-container-introduct-room">
+            <div class="body-container-introduct-room-img">
+              <img
+                src="./assets/css/img/standard room.jpeg"
+                alt=""
+                class="body-container-introduct-room-picture"
+              />
+            </div>
+
+            <div class="body-container-introduct-room-title">
+              <div class="body-container-introduct-room-des">
+                <h3>Standard Room</h3>
+              </div>
+              <div class="body-container-introduc-rom-subdes">
+                <p>
+                  Đây là hạng phòng tiêu chuẩn của Haven of Fairy<br />với đủ
+                  các tiện nghi cần thiết giúp cho kì nghỉ của<br />bạn trở nên
+                  thoải mái hơn bao giờ hết.
+                </p>
+              </div>
+
+              <div class="body-container-introduct-room-sale">
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>15% <span>giảm giá</span></h3>
+                  <p>Cho 2 ngày<br />hoặc hơn<br /></p>
+                </div>
+
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>25% <span>giảm giá</span></h3>
+                  <p>Cho 3 ngày<br />hoặc hơn<br /></p>
+                </div>
+              </div>
+
+              <div class="body-container-introduct-room-btn-container">
+                <div
+                  class="body-container-introduct-room-btn"
+                  onclick="dieu_huong_timphong_giaphong()"
+                >
+                  <p>Đặt phòng ngay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-container-introduct-room-background">
+          <div class="body-container-introduct-room">
+            <div class="body-container-introduct-room-title">
+              <div class="body-container-introduct-room-des">
+                <h3>Superior Room</h3>
+              </div>
+              <div class="body-container-introduc-rom-subdes">
+                <p>
+                  Không gian phòng Superior Room được thiết kế tinh tế và sang
+                  trọng với các tông màu trung tính, tạo nên môi trường nghỉ
+                  ngơi lý tưởng để quý khách tái tạo năng lượng sau một ngày
+                  khám phá kỳ quan tự nhiên<br />
+                  bất tận của Haven of Fairy.
+                </p>
+              </div>
+
+              <div class="body-container-introduct-room-sale">
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>15% <span>giảm giá</span></h3>
+                  <p>Cho 2 ngày<br />hoặc hơn<br /></p>
+                </div>
+
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>25% <span>giảm giá</span></h3>
+                  <p>Cho 3 ngày<br />hoặc hơn<br /></p>
+                </div>
+              </div>
+
+              <div
+                class="body-container-introduct-room-btn-container-for-superior-room"
+              >
+                <div class="body-container-introduct-room-btn">
+                  <p>Đặt phòng ngay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-container-introduct-room-img">
+              <img
+                src="./assets/css/img/Superior-Room.jpg"
+                alt=""
+                class="body-container-introduct-room-picture"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="body-container-introduct-room-background">
+          <div class="body-container-introduct-room">
+            <div class="body-container-introduct-room-img">
+              <img
+                src="./assets/css/img/Deluxe-Room.jpg"
+                alt=""
+                class="body-container-introduct-room-picture"
+              />
+            </div>
+
+            <div class="body-container-introduct-room-title">
+              <div class="body-container-introduct-room-des">
+                <h3>Deluxe Room</h3>
+              </div>
+              <div class="body-container-introduc-rom-subdes">
+                <p>
+                  Hạng phòng Deluxe Room cũng được trang bị các tiện nghi hiện
+                  đại như truy cập internet nhanh chóng, ti vi màn hình phẳng
+                  với nhiều kênh giải trí, minibar tiện lợi và điều hòa không
+                  khí hiện đại, đảm bảo bạn có một kỳ nghỉ đáng nhớ và trọn vẹn.
+                </p>
+              </div>
+
+              <div class="body-container-introduct-room-sale">
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>15% <span>giảm giá</span></h3>
+                  <p>Cho 2 ngày<br />hoặc hơn<br /></p>
+                </div>
+
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>25% <span>giảm giá</span></h3>
+                  <p>Cho 3 ngày<br />hoặc hơn<br /></p>
+                </div>
+              </div>
+
+              <div
+                class="body-container-introduct-room-btn-container-for-deluxe-room"
+              >
+                <div class="body-container-introduct-room-btn">
+                  <p>Đặt phòng ngay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="body-container-introduct-room-background">
+          <div class="body-container-introduct-room">
+            <div class="body-container-introduct-room-title">
+              <div class="body-container-introduct-room-des">
+                <h3>Suite Room</h3>
+              </div>
+              <div class="body-container-introduc-rom-subdes">
+                <p>
+                  Hạng phòng Suite Room tại Haven of Fairy là biểu tượng của sự
+                  sang trọng và đẳng cấp. Với không gian rộng rãi và thiết kế
+                  độc đáo, mỗi căn phòng Suite mang đến cảm giác riêng biệt,
+                  khác biệt và đáng nhớ
+                </p>
+              </div>
+
+              <div class="body-container-introduct-room-sale">
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>15% <span>giảm giá</span></h3>
+                  <p>Cho 2 ngày<br />hoặc hơn<br /></p>
+                </div>
+
+                <div class="body-container-introduct-room-line"></div>
+                <div class="body-container-introduct-room-sub-des">
+                  <h3>25% <span>giảm giá</span></h3>
+                  <p>Cho 3 ngày<br />hoặc hơn<br /></p>
+                </div>
+              </div>
+
+              <div class="body-container-introduct-room-btn-container">
+                <div class="body-container-introduct-room-btn">
+                  <p>Đặt phòng ngay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-container-introduct-room-img">
+              <img
+                src="./assets/css/img/Suite-Room.jpg"
+                alt=""
+                class="body-container-introduct-room-picture"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="body-container-aboutus">
+          <img
+            src="./assets/css/img/about-us.jpg"
+            alt=""
+            class="body-container-picture"
+          />
+          <div class="body-container-text" onclick="dieu_huong_vechungtoi()">
+            <p>Về chúng tôi</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="./assets/css/img/Vector.png"
+              alt=""
+              class="footer-brand__img"
+            />
+            <div class="footer-brand__facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="footer-brand__instargram">
+              <a href="#">Instargram</a>
+            </div>
+            <div class="footer-brand__watermark">© Haven of Fairy</div>
+          </div>
+
+          <ul class="footer-info">
+            <li class="footer-info__item">
+              <h4>Công ty cổ phần<br />Haven of Fairy<br /></h4>
+              <p>Về Haven of Fairy</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Hỗ trợ</h4>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản</p>
+              <p>Chính sách hoạt động</p>
+              <p>FAQ</p>
+            </li>
+
+            <li class="footer-info__item">
+              <h4>Liên hệ</h4>
+              <p>cthaveoffairy.com</p>
+              <p>123 456 789</p>
+              <p>Công ty cổ phần Haven of Fairy</p>
+              <p>Mã số DN: 32763216</p>
+              <p>Thành phố Hồ Chí<br />Minh, Việt Nam<br /></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function dieu_huong_trangchu() {
+        location.assign("http://127.0.0.1:5500/HomePage/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_dichvu() {
+        location.assign("http://127.0.0.1:5500/Service/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_hangphong() {
+        location.assign("http://127.0.0.1:5500/RoomClass/index.html#");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_vechungtoi() {
+        location.assign("http://127.0.0.1:5500/AboutUs/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_chitietphong() {
+        location.assign("http://127.0.0.1:5500/RoomDetail/index.html");
+      }
+    </script>
+
+    <script>
+      function dieu_huong_timphong_giaphong() {
+        location.assign("http://127.0.0.1:5500/FindRoom-RoomPrice/index.html");
+      }
+    </script>
+  </body>
+</html>
